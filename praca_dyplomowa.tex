@@ -1,0 +1,72 @@
+\documentclass[a4paper]{article}
+\usepackage[vmargin=1in,hmargin=1.25in]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage{anyfontsize}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{afterpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage[titles]{tocloft}
+\usepackage[polish]{babel}
+\usepackage{etoolbox} % for \patchcmd
+
+\renewcommand\cftsecafterpnum{\vskip6pt}
+\renewcommand\cftsubsecafterpnum{\vskip6pt}
+
+\renewcommand{\cftsecfont}{\bfseries\arialsection}
+\renewcommand{\cftsubsecfont}{\arialsubsection}
+
+\setmainfont{Times New Roman}
+
+\newfontfamily\arialsection{Arial Narrow}
+\newfontfamily\arialsubsection{Arial Narrow}
+
+\titleformat{\section}
+  {\arialsection\bfseries\fontsize{14pt}{18pt}\selectfont}{\thesection.}{1em}{}
+
+\titleformat{\subsection}
+  {\arialsubsection\bfseries\fontsize{13pt}{18pt}\selectfont}{\thesubsection.}{1em}{}
+
+\fontsize{12pt}{0pt}\selectfont
+\onehalfspacing
+
+\patchcmd{\tableofcontents}{\contentsname}{\MakeUppercase\contentsname}{}{}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\input{./sections/header.tex}
+\input{./sections/titles.tex}
+
+\pagenumbering{arabic}
+\input{./sections/toc.tex}
+
+\input{./sections/introduction.tex}
+\input{./sections/aim_and_scope.tex}
+\input{./sections/comparison.tex}
+\input{./sections/system_design.tex}
+
+\clearpage
+\section{test}
+
+\subsection{test sub}
+
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+hello, world! lorem ipsum hello hello raz dwa trzy 
+\cite{Mauthe_2004}
+
+\bibliographystyle{plain}
+\bibliography{references.bib}
+
+\end{document}

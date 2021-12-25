@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{StrapiDeployment}
+Deployment - strapi developer docs.
+\newblock
+  \url{https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html}.
+\newblock Dostęp: 2020-12-10.
+
+\bibitem{PostgrestDefinition}
+Postgrest documentation.
+\newblock \url{https://postgrest.org/en/stable/index.html}.
+\newblock Dostęp: 2020-12-10.
+
+\bibitem{PostgrestFts}
+Postgrest documentation - full-text search.
+\newblock \url{https://postgrest.org/en/stable/api.html#fts}.
+\newblock Dostęp: 2020-12-10.
+
+\bibitem{PostgrestJson}
+Postgrest documentation - json columns.
+\newblock \url{https://postgrest.org/en/stable/api.html#json-columns}.
+\newblock Dostęp: 2020-12-10.
+
+\bibitem{WordpressCustomType}
+Wordpress theme handbook - post types.
+\newblock
+  \url{https://developer.wordpress.org/themes/basics/post-types/#custom-post-types}.
+\newblock Dostęp: 2020-12-10.
+
+\bibitem{Mauthe_2004}
+Andreas Mauthe and Peter Thomas.
+\newblock {\em Professional Content Management Systems}.
+\newblock John Wiley {\&} Sons, Ltd, jan 2004.
+
+\end{thebibliography}
