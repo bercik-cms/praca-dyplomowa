@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.10)  25 DEC 2021 21:40
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.10)  26 DEC 2021 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -550,7 +550,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1] [2
 
 ]) (./sections/introduction.tex)
-(./sections/aim_and_scope.tex) (./sections/comparison.tex [3]
+(./sections/aim_and_scope.tex
+Overfull \hbox (6.1115pt too wide) in paragraph at lines 16--21
+[]\TU/TimesNewRoman(0)/m/n/10 Nie mniej ważnym założeniem było umożliwienie adm
+inistratorowi definiowania punktów końcowych,
+ []
+
+[3]
+Overfull \hbox (0.55205pt too wide) in paragraph at lines 85--89
+[]\TU/TimesNewRoman(0)/m/n/10 Implementuje bezpieczne wykonywanie drzewa zapyta
+ń SQL z użyciem niezaufanych danych
+ []
+
+) (./sections/comparison.tex [4]
 Overfull \hbox (2.58287pt too wide) in paragraph at lines 80--85
 []\TU/TimesNewRoman(0)/m/n/10 Strapi umożliwia operowanie na danych za pomocą G
 raphQL. Ta opcja pozwala na pobieranie konkret-
@@ -562,13 +574,7 @@ Overfull \hbox (2.30829pt too wide) in paragraph at lines 86--90
 otrzebny jest system CMS pozwalający na bardziej
  []
 
-[4]) (./sections/system_design.tex [5]
-Overfull \hbox (0.55205pt too wide) in paragraph at lines 65--69
-[]\TU/TimesNewRoman(0)/m/n/10 Implementuje bezpieczne wykonywanie drzewa zapyta
-ń SQL z użyciem niezaufanych danych
- []
-
-) [6] (./praca_dyplomowa.bbl
+[5]) (./sections/system_design.tex) [6] (./praca_dyplomowa.bbl
 Underfull \hbox (badness 1997) in paragraph at lines 25--29
 []\TU/TimesNewRoman(0)/m/n/10 Wordpress theme handbook - post types.  []$[][][]
 [][] [] [] [] [][][][][][][][][] [] [][][][][][][][][] [] [][][] [] [][][][][][
@@ -579,15 +585,15 @@ Underfull \hbox (badness 1997) in paragraph at lines 25--29
 
 ] (./praca_dyplomowa.aux)
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: 07A9774E71B34A75BCB1A5AB9ED1041C;1567.
+(rerunfilecheck)             Checksum: E01902F1C89662154E26B25759F5305A;1596.
  ) 
 Here is how much of TeX's memory you used:
- 11967 strings out of 478774
- 229834 string characters out of 5864470
- 614786 words of memory out of 6000000
- 31781 multiletter control sequences out of 15000+600000
+ 11968 strings out of 478774
+ 229845 string characters out of 5864470
+ 614829 words of memory out of 6000000
+ 31782 multiletter control sequences out of 15000+600000
  404102 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 73i,4n,81p,300b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,4n,81p,258b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on praca_dyplomowa.pdf (15 pages).

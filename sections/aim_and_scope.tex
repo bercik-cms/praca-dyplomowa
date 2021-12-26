@@ -1,1 +1,96 @@
 \section{CEL I ZAKRES PRACY}
+
+\subsection{Cel pracy}
+
+Celem pracy było przygotowanie systemu CMS. System powinien zawierać większość
+funkcji dostępnych w typowym systemie CMS, jak tworzenie nowych typów danych i
+manipulacja danymi znajdującymi się w systemie, jednak nie są to główne funkcje
+systemu. Głównym założeniem przy projektowaniu i implementacji było stworzenie
+sytemu, który nie ogranicza możliwości operowania danymi przez administratora.
+
+Główny cel został osiągnięty przez pozwolenie administratorowi na wykonywanie
+natywnych zapytań SQL na bazie danych. Zaimplementowano aplikacje frontend i
+backend, które razem umożliwiają administratorowi wygodne pisanie zapytań SQL i
+testowanie ich wpływu na bazę danych.
+
+Nie mniej ważnym założeniem było umożliwienie administratorowi definiowania
+punktów końcowych, których wywołanie zapytaniem HTTP powoduje wykonanie
+zdefiniowanego przez administratora drzewa zapytań SQL. Przygotowany edytor
+pozwala na modelowanie struktury danych, które zostaną zwrócone w odpowiedzi
+HTTP.
+
+\subsection{Zakres funkcji systemu}
+
+Program przygotowany w ramach pracy można podzielić na dwie części: frontend i
+backend:
+
+\begin{enumerate}
+    \item Frontend.
+
+    \begin{itemize}
+
+        \item Aplikacja SPA wykorzystującą bibliotekę react.js. Strona
+        porozumiewa się z serwerem za pomocą API REST.
+        
+        \item Jest napisany w języku Typescript i wykorzystuje system typów w
+        każdym miejscu, gdzie jest to możliwe.
+
+        \item Strona jest responsywna dzięki zastosowanym nowoczesnym opcjom CSS
+        - grid i flexbox. Strona korzysta ze zmiennych CSS. Zmienne CSS
+        umożliwiły łatwą implementację funkcji zmiany motywu aplikacji przez
+        użytkownika.
+
+        \item Implementuje ważniejsze funkcje typowego panelu administratora
+        systemu zarządzania treścią: tworzenie nowych tabel, zarządzanie danymi
+        w tabeli.
+
+        \item Implementuje zaawansowany edytor SQL z podświetlaniem składni,
+        funkcją zmiany kolejności zapytań, funkcją tymczasowego wyłączania
+        zapytania. Wyświetla wyniki każdego zapytania pod kodem zapytania.
+        Pozwala pisać zapytanie testowe, którego wynik zostanie pobrany przed
+        wykonaniem listy zapytań jak i po wykonaniu. Pozwala na wygenerowanie
+        diagramu ER przed i po wykonaniu listy zapytań. Pozwala na testowanie
+        listy zapytań z pomocą transakcji, która zostanie wycofana przed zwrotem
+        danych.
+
+        \item Implementuje edytor punktów końcowych pozwalający na pisanie
+        złożonych drzew zapytań, w których zapytania podrzędne mają dostęp do
+        danych wynikających z wykonania zapytań nadrzędnych. Administrator może
+        testować punkt końcowy przed wdrożeniem z wykorzystaniem edytora danych
+        testowych. Administrator może ograniczać możliwość wywołania punktu
+        końcowego do listy grup użytkowników.
+
+        \item Implementuje interfejs tworzenia użytkowników.
+
+    \end{itemize}
+
+    \item Backend.
+
+    \begin{itemize}
+
+        \item Backend aplikacji został napisany w języku rust. Jest
+        asynchroniczny, co pozwala na obsługiwanie wielu zapytań na mniejszej
+        ilości wątków. Wykorzystuje asynchroniczny runtime Hyper.
+
+        \item Współpracuje z bazą danych PostgreSQL. Używa tabel
+        zawierających dane o tabelach w bazie danych, przez co nie musi sam
+        przechowywać metadanych o tabelach.
+
+        \item Korzysta z transakcji. Są używane do testowania pisanych
+        przez administratora zapytań SQL.
+
+        \item Implementuje generowanie diagramu ER w składni mermaid.js z danych
+        pobranych z tabel zawierających metadane o tabelach w bazie danych.
+
+        \item Implementuje bezpieczne wykonywanie drzewa zapytań SQL z użyciem
+        niezaufanych danych z przychodzącego zapytania HTTP. Zapytania podrzędne
+        mają dostęp do zapytań nadrzędnych. Każde wykorzystanie danych w
+        zapytaniach jest zabezpieczone przed atakami SQL injection.
+
+        \item Implementuje system użytkowników z wykorzystaniem technologii json
+        web token. Bezpiecznie przechowuje hasła użytkowników za pomocą
+        algorytmu Argon2.
+
+    \end{itemize}
+
+\end{enumerate}
