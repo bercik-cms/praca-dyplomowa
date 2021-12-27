@@ -10,5 +10,9 @@
 \contentsline {subsection}{\numberline {3.4}Podsumowanie}{6}{subsection.3.4}%
 \contentsline {section}{\numberline {4}PROJEKT SYSTEMU}{6}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Projekt aplikacji frontend}{6}{subsection.4.1}%
-\contentsline {section}{\numberline {5}test}{7}{section.5}%
-\contentsline {subsection}{\numberline {5.1}test sub}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {4.2}Projekt aplikacji backend}{7}{subsection.4.2}%
+\contentsline {section}{\numberline {5}IMPLEMENTACJA KLUCZOWYCH FUNKCJI}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Tworzenie nowych typów danych}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Zarządzanie danymi}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {6}test}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}test sub}{10}{subsection.6.1}%
