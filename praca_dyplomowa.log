@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.10)  27 DEC 2021 21:51
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.10)  28 DEC 2021 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -359,24 +359,57 @@ File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
 \Gin@req@height=\dimen164
 \Gin@req@width=\dimen165
 )
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen166
+\captionmargin@=\dimen167
+\captionwidth=\dimen168
+\caption@tempdima=\dimen169
+\caption@indent=\dimen170
+\caption@parindent=\dimen171
+\caption@hangindent=\dimen172
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count287
+\c@continuedfloat=\count288
+Package caption Info: hyperref package is loaded.
+)
+\c@KVtest=\count289
+\sf@farskip=\skip83
+\sf@captopadj=\dimen173
+\sf@capskip=\skip84
+\sf@nearskip=\skip85
+\c@subfigure=\count290
+\c@subfigure@save=\count291
+\c@subtable=\count292
+\c@subtable@save=\count293
+\sf@top=\skip86
+\sf@bottom=\skip87
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count287
+\lst@mode=\count294
 \lst@gtempboxa=\box52
 \lst@token=\toks21
-\lst@length=\count288
-\lst@currlwidth=\dimen166
-\lst@column=\count289
-\lst@pos=\count290
-\lst@lostspace=\dimen167
-\lst@width=\dimen168
-\lst@newlines=\count291
-\lst@lineno=\count292
-\lst@maxwidth=\dimen169
+\lst@length=\count295
+\lst@currlwidth=\dimen174
+\lst@column=\count296
+\lst@pos=\count297
+\lst@lostspace=\dimen175
+\lst@width=\dimen176
+\lst@newlines=\count298
+\lst@lineno=\count299
+\lst@maxwidth=\dimen177
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count293
-\lst@skipnumbers=\count294
+\c@lstnumber=\count300
+\lst@skipnumbers=\count301
 \lst@framebox=\box53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -427,31 +460,31 @@ Package fontspec Info: Font family 'ArialNarrow(0)' created for font 'Arial
 (./praca_dyplomowa.aux)
 \openout1 = `praca_dyplomowa.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-3.
+4.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -493,65 +526,65 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 43.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 43.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 43.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 43.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 43.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 43.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 43.
-LaTeX Font Info:    Redeclaring math accent \check on input line 43.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 43.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 43.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 43.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 43.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 44.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 44.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 44.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 44.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 44.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 44.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 44.
+LaTeX Font Info:    Redeclaring math accent \check on input line 44.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 44.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 44.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 44.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 43.
+(Font)              `operators' in the math version `normal' on input line 44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 4
-3.
+4.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 43.
+(Font)              `operators' in the math version `bold' on input line 44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-43.
+44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 43.
+input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 43.
+ 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
-43.
+44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 43.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 43.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
-input line 43.
+input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
-e 43.
+e 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 43.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 43.
-Package hyperref Info: Link coloring OFF on input line 43.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 44.
+Package hyperref Info: Link coloring OFF on input line 44.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -561,17 +594,21 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count295
+\c@section@level=\count302
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
 (./praca_dyplomowa.out) (./praca_dyplomowa.out)
 \@outlinefile=\write3
 \openout3 = `praca_dyplomowa.out'.
 
-\c@lstlisting=\count296
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count303
  (./sections/header.tex [1]
 [2
 
@@ -587,83 +624,4 @@ LaTeX Info: Redefining \nameref on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `praca_dyplomowa.toc'.
-
- [1] [2
-
-]) (./sections/introduction.tex)
-(./sections/aim_and_scope.tex
-Overfull \hbox (6.1115pt too wide) in paragraph at lines 16--21
-[]\TU/TimesNewRoman(0)/m/n/10 Nie mniej ważnym założeniem było umożliwienie adm
-inistratorowi definiowania punktów końcowych,
- []
-
-[3]
-Overfull \hbox (0.55205pt too wide) in paragraph at lines 85--89
-[]\TU/TimesNewRoman(0)/m/n/10 Implementuje bezpieczne wykonywanie drzewa zapyta
-ń SQL z użyciem niezaufanych danych
- []
-
-) (./sections/comparison.tex [4]
-Overfull \hbox (2.58287pt too wide) in paragraph at lines 80--85
-[]\TU/TimesNewRoman(0)/m/n/10 Strapi umożliwia operowanie na danych za pomocą G
-raphQL. Ta opcja pozwala na pobieranie konkret-
- []
-
-
-Overfull \hbox (2.30829pt too wide) in paragraph at lines 86--90
-[]\TU/TimesNewRoman(0)/m/n/10 Podsumowując, Strapi jest dobrym wyborem, jeśli p
-otrzebny jest system CMS pozwalający na bardziej
- []
-
-[5]) (./sections/system_design.tex
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 35.
- (./code/editors.ts)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6] (./code/schemeToggling.ts)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.45155pt too wide) in paragraph at lines 63--65
-[]\TU/TimesNewRoman(0)/m/n/10 Moduł zawierający algorytmy zawiera najbardziej s
-komplikowane logicznie elementy programu. Zna-
- []
-
-) (./sections/key_functionality_implementation.tex
-(./sections/subsections_key_functionality/generic_cms_functions.tex [7]
-File: ./img/table_creation.png Graphic file (type bmp)
-<./img/table_creation.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-)) [8] [9] (./praca_dyplomowa.bbl
-Underfull \hbox (badness 1997) in paragraph at lines 25--29
-[]\TU/TimesNewRoman(0)/m/n/10 Wordpress theme handbook - post types.  []$[][][]
-[][] [] [] [] [][][][][][][][][] [] [][][][][][][][][] [] [][][] [] [][][][][][
-] []
- []
-
-) [10
-
-] (./praca_dyplomowa.aux)
-Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: EF7297580259846812ECFBC02CBA2877;2364.
- ) 
-Here is how much of TeX's memory you used:
- 13579 strings out of 478774
- 253819 string characters out of 5864470
- 800995 words of memory out of 6000000
- 33343 multiletter control sequences out of 15000+600000
- 404118 words of font info for 69 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 73i,4n,81p,266b,1085s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on praca_dyplomowa.pdf (18 pages).
+(Font)              <5> on input li
