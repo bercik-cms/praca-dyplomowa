@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.10)  28 DEC 2021 20:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.10)  30 DEC 2021 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**praca_dyplomowa.tex
+**./praca_dyplomowa.tex
 (./praca_dyplomowa.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-05-07>
@@ -624,4 +624,128 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input li
+(Font)              <5> on input line 2.
+)
+\tf@toc=\write4
+\openout4 = `praca_dyplomowa.toc'.
+
+ [1] [2
+
+]) (./sections/introduction.tex)
+(./sections/aim_and_scope.tex
+Overfull \hbox (6.1115pt too wide) in paragraph at lines 16--21
+[]\TU/TimesNewRoman(0)/m/n/10 Nie mniej ważnym założeniem było umożliwienie adm
+inistratorowi definiowania punktów końcowych,
+ []
+
+[3]
+Overfull \hbox (0.55205pt too wide) in paragraph at lines 85--89
+[]\TU/TimesNewRoman(0)/m/n/10 Implementuje bezpieczne wykonywanie drzewa zapyta
+ń SQL z użyciem niezaufanych danych
+ []
+
+) (./sections/comparison.tex [4]
+Overfull \hbox (2.58287pt too wide) in paragraph at lines 80--85
+[]\TU/TimesNewRoman(0)/m/n/10 Strapi umożliwia operowanie na danych za pomocą G
+raphQL. Ta opcja pozwala na pobieranie konkret-
+ []
+
+
+Overfull \hbox (2.30829pt too wide) in paragraph at lines 86--90
+[]\TU/TimesNewRoman(0)/m/n/10 Podsumowując, Strapi jest dobrym wyborem, jeśli p
+otrzebny jest system CMS pozwalający na bardziej
+ []
+
+[5]) (./sections/system_design.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 35.
+ (./code/editors.ts)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6] (./code/schemeToggling.ts)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.45155pt too wide) in paragraph at lines 63--65
+[]\TU/TimesNewRoman(0)/m/n/10 Moduł zawierający algorytmy zawiera najbardziej s
+komplikowane logicznie elementy programu. Zna-
+ []
+
+) (./sections/key_functionality_implementation.tex
+(./sections/subsections_key_functionality/generic_cms_functions.tex [7]
+File: ./img/table_creation.png Graphic file (type bmp)
+<./img/table_creation.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+File: ./img/table_data_management.png Graphic file (type bmp)
+<./img/table_data_management.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/subsections_key_functionality/sql_editor.tex [9] [10]
+File: ./img/sql_editor.png Graphic file (type bmp)
+<./img/sql_editor.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./img/test_query_before.png Graphic file (type bmp)
+<./img/test_query_before.png>
+File: ./img/test_query_after.png Graphic file (type bmp)
+<./img/test_query_after.png>
+File: ./img/diagram_diff_before.png Graphic file (type bmp)
+<./img/diagram_diff_before.png>
+File: ./img/diagram_diff_after.png Graphic file (type bmp)
+<./img/diagram_diff_after.png>
+File: ./img/diagram_diff_after_fullscreen.png Graphic file (type bmp)
+<./img/diagram_diff_after_fullscreen.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sections/subsections_key_functionality/endpoint_editor.tex)) [11
+
+] [12]
+[13] (./sections/tests.tex
+Overfull \hbox (5.8104pt too wide) in paragraph at lines 5--8
+[]\TU/TimesNewRoman(0)/m/n/10 Działanie wszystkich funkcji wchodzących w skład 
+logiki biznesowej programu zostało zweryfikowane
+ []
+
+(./code/cargoTest.txt)
+File: ./img/postman_test_exec.png Graphic file (type bmp)
+<./img/postman_test_exec.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [14
+
+] [15] (./praca_dyplomowa.bbl
+Underfull \hbox (badness 1997) in paragraph at lines 25--29
+[]\TU/TimesNewRoman(0)/m/n/10 Wordpress theme handbook - post types.  []$[][][]
+[][] [] [] [] [][][][][][][][][] [] [][][][][][][][][] [] [][][] [] [][][][][][
+] []
+ []
+
+) [16
+
+] (./praca_dyplomowa.aux)
+Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
+(rerunfilecheck)             Checksum: D1B614F567E1E938BCCB716BEE404B33;3129.
+ ) 
+Here is how much of TeX's memory you used:
+ 15013 strings out of 478774
+ 282598 string characters out of 5864470
+ 829044 words of memory out of 6000000
+ 34748 multiletter control sequences out of 15000+600000
+ 404118 words of font info for 69 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 73i,9n,81p,340b,1090s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on praca_dyplomowa.pdf (24 pages).

@@ -1,0 +1,9 @@
+running 6 tests
+test algorithms::mermaid_diagram_generation::tests::works ... ok
+test algorithms::sql_variable_parser::tests::bind_vec ... ok
+test algorithms::sql_variable_parser::tests::not_closed_panics - should panic ... ok
+test algorithms::sql_variable_parser::tests::parsing_multiple ... ok
+test algorithms::sql_variable_parser::tests::parsing_endpoint_info ... ok
+test algorithms::sql_variable_parser::tests::parsing_test ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
