@@ -6,6 +6,11 @@ Deployment - strapi developer docs.
   \url{https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html}.
 \newblock Dostęp: 2020-12-10.
 
+\bibitem{PostgresPrepareStatement}
+Postgres documentation - sql prepare.
+\newblock \url{https://www.postgresql.org/docs/current/sql-prepare.html}.
+\newblock Dostęp: 2020-12-30.
+
 \bibitem{PostgrestDefinition}
 Postgrest documentation.
 \newblock \url{https://postgrest.org/en/stable/index.html}.

@@ -8,45 +8,46 @@ Warning--to sort, need author or key in StrapiDeployment
 Warning--to sort, need author or key in PostgrestDefinition
 Warning--to sort, need author or key in PostgrestJson
 Warning--to sort, need author or key in PostgrestFts
-You've used 7 entries,
+Warning--to sort, need author or key in PostgresPrepareStatement
+You've used 8 entries,
             2118 wiz_defined-function locations,
-            529 strings with 4942 characters,
-and the built_in function-call counts, 1364 in all, are:
-= -- 129
-> -- 31
+            534 strings with 5107 characters,
+and the built_in function-call counts, 1532 in all, are:
+= -- 146
+> -- 32
 < -- 0
-+ -- 15
++ -- 16
 - -- 8
-* -- 53
-:= -- 192
-add.period$ -- 21
-call.type$ -- 7
-change.case$ -- 23
+* -- 58
+:= -- 211
+add.period$ -- 24
+call.type$ -- 8
+change.case$ -- 26
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 59
-empty$ -- 160
+cite$ -- 14
+duplicate$ -- 66
+empty$ -- 183
 format.name$ -- 8
-if$ -- 317
+if$ -- 359
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 8
 missing$ -- 4
-newline$ -- 38
+newline$ -- 43
 num.names$ -- 4
-pop$ -- 68
+pop$ -- 78
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 20
 quote$ -- 0
-skip$ -- 39
+skip$ -- 44
 stack$ -- 0
-substring$ -- 35
-swap$ -- 7
+substring$ -- 40
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
-warning$ -- 5
+type$ -- 28
+warning$ -- 6
 while$ -- 4
-width$ -- 8
-write$ -- 67
-(There were 5 warnings)
+width$ -- 9
+write$ -- 76
+(There were 6 warnings)

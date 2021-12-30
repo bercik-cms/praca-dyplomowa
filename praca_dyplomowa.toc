@@ -15,8 +15,10 @@
 \contentsline {subsection}{\numberline {5.1}Tworzenie nowych typów danych}{8}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Zarządzanie danymi}{9}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Edytor zapytań SQL wykonywanych natychmiast}{11}{subsection.5.3}%
-\contentsline {section}{\numberline {6}WERYFIKACJA PRACY PROGRAMU}{14}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Testy jednostkowe}{14}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Testy integracyjne}{14}{subsection.6.2}%
-\contentsline {section}{\numberline {7}test}{16}{section.7}%
-\contentsline {subsection}{\numberline {7.1}test sub}{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {5.4}Edytor punktów końcowych}{14}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Wykonywanie SQL przy wywołaniu punktu końcowego}{18}{subsection.5.5}%
+\contentsline {section}{\numberline {6}WERYFIKACJA PRACY PROGRAMU}{21}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Testy jednostkowe}{21}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Testy integracyjne}{21}{subsection.6.2}%
+\contentsline {section}{\numberline {7}test}{23}{section.7}%
+\contentsline {subsection}{\numberline {7.1}test sub}{23}{subsection.7.1}%
