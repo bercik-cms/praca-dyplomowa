@@ -3,51 +3,52 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: praca_dyplomowa.aux
 The style file: plain.bst
 Database file #1: references.bib
+Warning--to sort, need author or key in WhyHeadlessCMS
 Warning--to sort, need author or key in WordpressCustomType
 Warning--to sort, need author or key in StrapiDeployment
 Warning--to sort, need author or key in PostgrestDefinition
 Warning--to sort, need author or key in PostgrestJson
 Warning--to sort, need author or key in PostgrestFts
 Warning--to sort, need author or key in PostgresPrepareStatement
-You've used 8 entries,
+You've used 10 entries,
             2118 wiz_defined-function locations,
-            534 strings with 5107 characters,
-and the built_in function-call counts, 1532 in all, are:
-= -- 146
-> -- 32
+            544 strings with 5381 characters,
+and the built_in function-call counts, 1917 in all, are:
+= -- 182
+> -- 40
 < -- 0
-+ -- 16
-- -- 8
-* -- 58
-:= -- 211
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 26
++ -- 20
+- -- 10
+* -- 71
+:= -- 270
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 66
-empty$ -- 183
-format.name$ -- 8
-if$ -- 359
+cite$ -- 17
+duplicate$ -- 85
+empty$ -- 228
+format.name$ -- 10
+if$ -- 447
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 4
-newline$ -- 43
-num.names$ -- 4
-pop$ -- 78
+int.to.str$ -- 10
+missing$ -- 6
+newline$ -- 53
+num.names$ -- 6
+pop$ -- 96
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 25
 quote$ -- 0
-skip$ -- 44
+skip$ -- 54
 stack$ -- 0
-substring$ -- 40
-swap$ -- 8
+substring$ -- 50
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
-warning$ -- 6
-while$ -- 4
-width$ -- 9
-write$ -- 76
-(There were 6 warnings)
+type$ -- 34
+warning$ -- 7
+while$ -- 6
+width$ -- 12
+write$ -- 95
+(There were 7 warnings)

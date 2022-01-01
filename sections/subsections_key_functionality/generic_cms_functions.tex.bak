@@ -5,7 +5,7 @@ od systemów CMS dostępnych na rynku. Jest zaimplementowana, jako lista
 formularzy. Każdy formularz odpowiada jednej kolumnie w nowo utworzonej tabeli.
 Administrator może dodawać nowy formularz, lub kasować już istniejący.
 
-Pojedynczy formularz zawiera następujące elementy:
+Pojedyńczy formularz zawiera następujące elementy:
 
 \begin{itemize}
 

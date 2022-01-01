@@ -7,7 +7,7 @@ drukowanymi a internetowymi. Większość organizacji publikujących treści pro
 strony internetowe. Wiele innych organizacji nie zajmujących się mediami zmaga
 się z problemem zarządzania treścią, którą produkują \cite{Mauthe_2004}. 
 
-Programy, które wspomagają tworzenie i zarządzanie treścią nazywa się systemami
+Programy, które wspomagają tworzenie i zarządzanie treścią nazywa się sytemami
 zarządzania treścią (ang. content management system — CMS). Do tych aplikacji
 zaliczają się dość proste aplikacje służące do zarządzania plikami, jak i
 skomplikowane systemy obsługujące dużą ilość rodzajów danych i urządzeń.
@@ -18,7 +18,7 @@ Zjednoczonych. Wszystkie te organizacje korzystają z sytemu Wordpress. Ponadto,
 oprócz dużych organizacji, serwis wordpress.com w roku 2009 udostępniał usługi
 ponad trzem i pół miliona blogom \cite{brazell2010wordpress}.
 
-Mimo tego, nie powstał jeszcze wszechobecny ogólny system zarządzania treścią
+Mimo tego, nie powstał jeszcze wchechobecny ogólny system zarządzania treścią
 (CMS), który spełniłby zapotrzebowania małych instytucji, jak i tych większych,
 produkujących duże ilości treści. Wątpliwe jest nawet, czy taki system mógłby
 zostać zbudowany, ponieważ wymagania z różnych przypadków użycia są zupełnie
@@ -37,7 +37,7 @@ różnych formach — na przykład na stronie internetowej i w aplikacji mobilne
 \subsection{Motywacja pracy}
 
 Zdaniem autora pracy, mimo że systemy headless CMS nie ograniczają warstwy
-prezentacji, nie oferują większych, niż tradycyjne systemy możliwości
+przezentacji, nie oferują większych, niż tradycyjne systemy możliwości
 operowania na warstwie danych. 
 
 Z tego powodu, w ramach tej pracy, przygotowano system headless CMS, którego
@@ -47,7 +47,7 @@ umożliwienie administratorom wykonywania natywnych zapytań SQL.
 \subsection{Literatura}
 
 Literatura dotycząca systemów CMS jest dość uboga. Większość dostępnych książek
-skupia się na profesjonalnych systemach CMS, z których korzystają firmy
+skupia się na profesjonalnych systemach CMS, z których koszystają firmy
 publikujące treści multimedialne. Książki opisujące systemy CMS przystosowane do
 mniejszych stron internetowych zazwyczaj skupiają się na konkretnym systemie i
 nie poruszają ogólnych zagadnień dotyczących systemów zarządzania treścią.

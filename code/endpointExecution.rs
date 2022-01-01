@@ -19,8 +19,6 @@ pub async fn execute<'a>(
             .map(|it| it.into_map())
             .collect::<Vec<_>>();
 
-        dbg!(&results);
-
         for result in results.into_iter() {
             self.push_execution_map(result);
 
@@ -52,6 +50,5 @@ pub async fn execute<'a>(
             }
         }
     }
-
     Ok(final_results)
 }

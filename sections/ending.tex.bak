@@ -1,0 +1,42 @@
+\section{ZAKOŃCZENIE}
+
+\subsection{Podsumowanie}
+
+Utworzona aplikacja spełnia założenia projektowe. Udało się przygotować system,
+który pozwala na wykonywanie dowolnych działań na bazie danych za pomocą
+natywnych zapytań SQL. Program udostępnia administratorom funkcje niedostępne w
+innych systemach CMS i headless CMS dostępnych na rynku.
+
+\subsection{Możliwości rozwoju}
+
+Aplikacja posiada większość funkcji typowego systemu CMS, jak tworzenie nowego
+typu danych i zarządzanie danymi za pomocą formularzy, a nie przez pisanie SQL.
+Brakuje jednak możliwości zmiany struktury tabel za pomocą formularza.
+Niewygodne jest również dodawanie kluczy obcych, które wymaga pamiętania nazwy
+tabeli, do której chce się odnieść oraz nazwy kolumny przechowującej klucze
+główne.
+
+Funkcją dostępną w typowych systemach CMS, której zupełnie brakuje w programie
+jest zarządzanie mediami. Należałoby się zastanowić, jak połączyć system,
+którego głównym sposobem zarządzania jest pisanie natywnych zapytań SQL z
+systemem zarządzania mediami.
+
+Możnaby użyć do tego celu jednego z typów danych bazy Postgres przeznaczonego do
+przechowywania danych binarnych. Popularnym rozwiązaniem jest przechowywanie
+danych binarnych w systemie plików i przechowywanie nazwy pliku w bazie danych.
+Takie rozwiąznie utrudniłoby jednak administratorom zarządzanie danymi. W celu
+ustalenia optymalnego rozwiązania problemu, wymagane są dalsze badania.
+
+Kolejną funkcją, jaką warto w przyszłości zaimplementować jest udostępnienie
+użytkownikom nie będącym administratorami okrojonego panelu administratora.
+Możnaby użyć do tego komponentów z panelu administratora, lub stworzyć
+niezależny panel, który zawiera interfejs przeznaczony do wywoływania punktów
+końcowych przygotowanych przez administratorów. Zaimplementowanie obydwu
+pomysłów stworzyłoby interfejs nie gorszy, niż w innych popularnych systemach
+CMS.
+
+Kolejną funkcją, jaką warto w przyszłości zaimplementować jest zwracanie danych
+przy wywołaniu punktu końcowego nie jako dokument json, lecz jako szablon HTML
+wypełniony danymi wynikowymi. Taka funkcja byłaby prosta w implementacji.
+Najtrudniejszą częścią implementacji byłoby przygotowanie interfejsu zarządzania
+szablonami w panelu administratora.

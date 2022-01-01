@@ -58,12 +58,12 @@ systemu backend spełniającego potrzeby jednej strony internetowej.
 
 \subsection{Strapi}
 
-Strapi to system Headless CMS. Nie posiada on interfejsu użytkownika. Dane
+Strapi to sytem Headless CMS. Nie posiada on interfejsu użytkownika. Dane
 wprowadzane do systemu są pobierane za pomocą API REST. Domyślne API ma
 ograniczoną funkcjonalność. Pobieranie danych z CMS jest ograniczone do
 pobierania wszystkich wpisów danego typu, lub jednego wpisu, ale tylko po id.
 
-Strapi umożliwia tworzenie własnych punktów końcowych. Administrator może ustawić
+Strapi umożliwia tworznie własnych punktów końcowych. Administrator może ustawić
 ścieżkę i funkcję, która obsłuży zapytania na daną ścieżkę. Nie da się jednak
 zrobić tego w panelu administratora. Administrator chcąc stworzyć niestandardowy
 punkt końcowy musi sam napisać funkcje, które obsłużą zapytania w języku

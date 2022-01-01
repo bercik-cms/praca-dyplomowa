@@ -67,7 +67,7 @@ Działanie i odporność na ataki SQL injection parsera SQL wchodzącego w skła
 programu można zrozumieć na przykładzie zawartym w teście jednostkowym
 zamieszczonym w listingu \ref{parsingTestListing}.
 
-Sparsowane zapytania SQL składają się z SQL zawierającego odniesienia do
+Sparsowane zapytania SQL skłądają się z SQL zawierającego odniesienia do
 parametrów w składni specyficznej dla bazy danych postgresql
 \cite{PostgresPrepareStatement} i listy ciągów znaków, które umożliwią
 znalezienie zmiennej w czasie wykonywania drzewa zapytań SQL.
@@ -88,7 +88,7 @@ Poniżej znajduje się formularz, za pomocą którego tworzony jest punkt końco
 Pierwszym elementem formularza jest pole tekstowe, do którego należy wpisać
 ścieżkę punktu końcowego. Poniżej znajduje się menu, którego należy użyć do
 ustawienia akceptowanych metod HTTP. Opcje to GET, POST i ANY. Wybranie opcji
-ANY powoduje akceptowanie zapytań o dowolnej metodzie HTTP.
+ANY powoduje akceptowanie zapytań o dowolnej medodzie HTTP.
 
 Kolejnym elementem jest menu, gdzie administrator może ustawić listę grup
 użytkowników, które będą miały dostęp do edytowanego punktu końcowego.

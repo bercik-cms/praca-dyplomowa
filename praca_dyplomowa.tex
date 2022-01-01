@@ -13,12 +13,15 @@
 \usepackage[polish]{babel}
 \usepackage{etoolbox} % for \patchcmd
 
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{placeins}
 
 \usepackage{listings}
-\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+\lstset{basicstyle=\ttfamily,breaklines=true}
 
 \renewcommand\cftsecafterpnum{\vskip6pt}
 \renewcommand\cftsubsecafterpnum{\vskip6pt}
@@ -27,6 +30,7 @@
 \renewcommand{\cftsubsecfont}{\arialsubsection}
 
 \setmainfont{Times New Roman}
+\setmonofont[Scale=MatchLowercase]{Fira Code}
 
 \newfontfamily\arialsection{Arial Narrow}
 \newfontfamily\arialsubsection{Arial Narrow}
@@ -38,11 +42,18 @@
   {\arialsubsection\bfseries\fontsize{13pt}{18pt}\selectfont}{\thesubsection.}{1em}{}
 
 \fontsize{12pt}{0pt}\selectfont
+
 \onehalfspacing
 
 \patchcmd{\tableofcontents}{\contentsname}{\MakeUppercase\contentsname}{}{}
 
+
 \begin{document}
+
+\counterwithin{lstlisting}{section}
+
+\renewcommand{\lstlistlistingname}{S\MakeLowercase{pis listingów}}
+\renewcommand*\listfigurename{Spis rysunków} 
 
 \pagenumbering{gobble}
 
@@ -70,26 +81,21 @@
 
 \input{./sections/key_functionality_implementation.tex}
 
-\clearpage
+\FloatBarrier
+
 \input{./sections/tests.tex}
 
 \clearpage
-\section{test}
 
-\subsection{test sub}
+\input{./sections/ending.tex}
 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-hello, world! lorem ipsum hello hello raz dwa trzy 
-\cite{Mauthe_2004}
+\clearpage
 
 \bibliographystyle{plain}
 \bibliography{references.bib}
+
+\listoffigures
+
+\lstlistoflistings
 
 \end{document}

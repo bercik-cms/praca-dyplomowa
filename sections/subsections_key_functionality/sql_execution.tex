@@ -54,7 +54,8 @@ Algorytm znajdowania wartości zmiennej można opisać następująco:
 \end{enumerate}
 
 Implementacja algorytmu została zamieszczona na listingu
-\ref{findingVariablesListing}.
+\ref{findingVariablesListing}. Diagram obrazujący działanie algorytmu
+przedstawiono na rysunku \ref{variableResolutionFigure}.
 
 \lstinputlisting[
     float=h!,
@@ -62,6 +63,13 @@ Implementacja algorytmu została zamieszczona na listingu
     label={findingVariablesListing},
     caption={Algorytm znajdowania wartości zmiennej}
 ]{./code/findingVariables.rs}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{./img/variable_resolution.png}
+    \caption{Diagram obrazujący działanie algorytmu znajdowania wartości zmiennych}
+    \label{variableResolutionFigure}
+\end{figure}
 
 Algorytm wykonywania drzewa zapytań SQL można opisać następująco:
 

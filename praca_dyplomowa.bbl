@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{WhyHeadlessCMS}
+Cloud-first headless cms: What it is and why you should use it.
+\newblock
+  \url{https://www.cmscritic.com/cloud-first-headless-cms-what-it-is-and-why-you-should-use-it/}.
+\newblock Dostęp: 2020-12-31.
 
 \bibitem{StrapiDeployment}
 Deployment - strapi developer docs.
@@ -31,6 +37,11 @@ Wordpress theme handbook - post types.
 \newblock
   \url{https://developer.wordpress.org/themes/basics/post-types/#custom-post-types}.
 \newblock Dostęp: 2020-12-10.
+
+\bibitem{brazell2010wordpress}
+Aaron Brazell.
+\newblock {\em Wordpress bible}.
+\newblock John Wiley \& Sons, 2010.
 
 \bibitem{Mauthe_2004}
 Andreas Mauthe and Peter Thomas.

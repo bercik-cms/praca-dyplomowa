@@ -16,7 +16,7 @@ jednostkowych można zobaczyć na listingu \ref{cargoTestListing}.
 \subsection{Testy integracyjne}
 
 Działanie niektórych funkcji programu jest zależne od bazy danych. Weryfikacja
-działania tych funkcji za pomocą testów jednostkowych wymagałaby napisania dużej
+działania tych funkcji za pomoca testów jednostkowych wymagałaby napisania dużej
 ilości serwisów mock. Z tego powodu, przetestowanie tych funkcji programu, jak i
 tych, które posiadają testy jednostkowe przeprowadzono za pomocą testów
 integracyjnych.
