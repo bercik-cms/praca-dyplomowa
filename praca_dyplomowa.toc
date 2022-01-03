@@ -2,29 +2,29 @@
 \contentsline {section}{\numberline {1}WSTĘP}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Przybliżenie domeny pracy}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Motywacja pracy}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Literatura}{3}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Zawartość rozdziałów}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.3}Literatura}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Zawartość rozdziałów}{4}{subsection.1.4}%
 \contentsline {section}{\numberline {2}CEL I ZAKRES PRACY}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Cel pracy}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Zakres funkcji systemu}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}PRZEGLĄD ISTNIEJĄCYCH ROZWIĄZAŃ}{5}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Wordpress}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Strapi}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}PostgREST}{7}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Podsumowanie}{7}{subsection.3.4}%
-\contentsline {section}{\numberline {4}PROJEKT SYSTEMU}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Projekt aplikacji frontend}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Projekt aplikacji backend}{8}{subsection.4.2}%
-\contentsline {section}{\numberline {5}IMPLEMENTACJA KLUCZOWYCH FUNKCJI}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Główna struktura interfejsu}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Tworzenie nowych typów danych}{10}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Zarządzanie danymi}{10}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Edytor zapytań SQL wykonywanych natychmiast}{13}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Edytor punktów końcowych}{16}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Wykonywanie SQL przy wywołaniu punktu końcowego}{20}{subsection.5.6}%
-\contentsline {section}{\numberline {6}WERYFIKACJA PRACY PROGRAMU}{24}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Testy jednostkowe}{24}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Testy integracyjne}{24}{subsection.6.2}%
-\contentsline {section}{\numberline {7}ZAKOŃCZNIE}{26}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Podsumowanie}{26}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Możliwości rozwoju}{26}{subsection.7.2}%
+\contentsline {subsection}{\numberline {2.2}Zakres funkcji systemu}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}PRZEGLĄD ISTNIEJĄCYCH ROZWIĄZAŃ}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Wordpress}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Strapi}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}PostgREST}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Podsumowanie}{9}{subsection.3.4}%
+\contentsline {section}{\numberline {4}PROJEKT SYSTEMU}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Projekt aplikacji frontend}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Projekt aplikacji backend}{11}{subsection.4.2}%
+\contentsline {section}{\numberline {5}IMPLEMENTACJA KLUCZOWYCH FUNKCJI}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Główna struktura interfejsu}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Tworzenie nowych typów danych}{13}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Zarządzanie danymi}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Edytor zapytań SQL wykonywanych natychmiast}{16}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Edytor punktów końcowych}{20}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Wykonywanie SQL przy wywołaniu punktu końcowego}{24}{subsection.5.6}%
+\contentsline {section}{\numberline {6}WERYFIKACJA PRACY PROGRAMU}{28}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Testy jednostkowe}{28}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Testy integracyjne}{28}{subsection.6.2}%
+\contentsline {section}{\numberline {7}ZAKOŃCZENIE}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Podsumowanie}{30}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Możliwości rozwoju}{30}{subsection.7.2}%
