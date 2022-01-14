@@ -1,9 +1,15 @@
-running 6 tests
+running 12 tests
 test algorithms::mermaid_diagram_generation::tests::works ... ok
 test algorithms::sql_variable_parser::tests::bind_vec ... ok
+test algorithms::sql_variable_parser::tests::parsing_endpoint_info ... ok
+test algorithms::endpoint_execution::test::error_when_cant_find_req_variable ... ok
+test algorithms::endpoint_execution::test::error_when_cant_find_super_variable ... ok
+test algorithms::endpoint_execution::test::request_variables_work ... ok
+test algorithms::endpoint_execution::test::super_variables_work ... ok
+test algorithms::endpoint_execution::test::error_when_too_many_supers ... ok
+test algorithms::sql_variable_parser::tests::parsing_test ... ok
 test algorithms::sql_variable_parser::tests::not_closed_panics - should panic ... ok
 test algorithms::sql_variable_parser::tests::parsing_multiple ... ok
-test algorithms::sql_variable_parser::tests::parsing_endpoint_info ... ok
-test algorithms::sql_variable_parser::tests::parsing_test ... ok
+test algorithms::endpoint_execution::test::it_works ... ok
 
-test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

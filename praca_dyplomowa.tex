@@ -13,6 +13,8 @@
 \usepackage[polish]{babel}
 \usepackage{etoolbox} % for \patchcmd
 
+\usepackage[nosingleletter]{impnattypo}
+
 \usepackage{chngcntr}
 \counterwithin{figure}{section}
 
@@ -26,27 +28,26 @@
 \renewcommand\cftsecafterpnum{\vskip6pt}
 \renewcommand\cftsubsecafterpnum{\vskip6pt}
 
-\renewcommand{\cftsecfont}{\bfseries\arialsection}
-\renewcommand{\cftsubsecfont}{\arialsubsection}
+\renewcommand{\cftsecfont}{\bfseries\arialnarrowbold}
+\renewcommand{\cftsubsecfont}{\arialnarrow}
 
 \setmainfont{Times New Roman}
 \setmonofont[Scale=MatchLowercase]{Fira Code}
 
-\newfontfamily\arialsection{Arial Narrow}
-\newfontfamily\arialsubsection{Arial Narrow}
+\newfontfamily\arialnarrowbold{Arial Narrow Bold}
+\newfontfamily\arialnarrow{Arial Narrow}
 
 \titleformat{\section}
-  {\arialsection\bfseries\fontsize{14pt}{18pt}\selectfont}{\thesection.}{1em}{}
+  {\arialnarrowbold\bfseries\fontsize{14pt}{18pt}\selectfont}{\thesection.}{1em}{}
 
 \titleformat{\subsection}
-  {\arialsubsection\bfseries\fontsize{13pt}{18pt}\selectfont}{\thesubsection.}{1em}{}
+  {\arialnarrowbold\bfseries\fontsize{13pt}{18pt}\selectfont}{\thesubsection.}{1em}{}
 
 \fontsize{12pt}{0pt}\selectfont
 
 \onehalfspacing
 
 \patchcmd{\tableofcontents}{\contentsname}{\MakeUppercase\contentsname}{}{}
-
 
 \begin{document}
 
@@ -66,35 +67,57 @@
 \input{./sections/introduction.tex}
 
 \FloatBarrier
+\clearpage
 
 \input{./sections/aim_and_scope.tex}
 
 \FloatBarrier
+\clearpage
 
 \input{./sections/comparison.tex}
 
 \FloatBarrier
+\clearpage
 
 \input{./sections/system_design.tex}
 
 \FloatBarrier
+\clearpage
 
 \input{./sections/key_functionality_implementation.tex}
 
 \FloatBarrier
+\clearpage
 
 \input{./sections/tests.tex}
 
+\clearpage
 \clearpage
 
 \input{./sections/ending.tex}
 
 \clearpage
 
-\bibliographystyle{plain}
-\bibliography{references.bib}
+{
+    \let\sffamily\rmfamily
+    \let\ttfamily\rmfamily
+    \let\bfseries\mdseries
+    \let\scshape\upshape
+    \let\slshape\upshape
+    \let\itshape\upshape
+    \let\em\upshape
+    \def\UrlFont{\normalfont}
+    \raggedleft
+
+    \bibliographystyle{plain}
+    \bibliography{references.bib}
+}
+
+\clearpage
 
 \listoffigures
+
+\clearpage
 
 \lstlistoflistings
 

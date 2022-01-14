@@ -1,17 +1,32 @@
 #[async_recursion]
-pub async fn execute<'a>(
+pub async fn execute(
     &mut self,
-    transaction: &mut Transaction<'a, Postgres>,
+    #[cfg(test)] mock_exec_service: &mut ExecutionMockService,
+    #[cfg(not(test))] transaction: &mut Transaction<'_, Postgres>,
     endpoint_infos: &Vec<EndpointInfo>,
 ) -> Result<HashMap<String, Vec<ExecutionResult>>> {
     let mut final_results = HashMap::<String, Vec<ExecutionResult>>::new();
 
     for query in endpoint_infos {
+        #[cfg(not(test))]
         let mut exec = sqlx::query_as::<Postgres, ArbitrarySqlRow>(&query.parsed_sql);
         for var_name in &query.variables {
             let val = self.get_variable_clone(var_name)?;
-            exec = exec.bind(val);
+
+            #[cfg(not(test))]
+            {
+                exec = exec.bind(val);
+            }
+            #[cfg(test)]
+            {
+                mock_exec_service.bind(&val);
+            }
         }
+
+        #[cfg(test)]
+        let results = mock_exec_service.simulate_call(&query.parsed_sql);
+
+        #[cfg(not(test))]
         let results = exec
             .fetch_all(&mut *transaction)
             .await?
@@ -22,6 +37,9 @@ pub async fn execute<'a>(
         for result in results.into_iter() {
             self.push_execution_map(result);
 
+            #[cfg(test)]
+            let children_results = self.execute(mock_exec_service, &query.children).await?;
+            #[cfg(not(test))]
             let children_results = self.execute(transaction, &query.children).await?;
 
             let mut result_map = self
@@ -50,5 +68,6 @@ pub async fn execute<'a>(
             }
         }
     }
+
     Ok(final_results)
 }
