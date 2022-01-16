@@ -1,0 +1,118 @@
+CMS collection
+
+Root Login admin
+  POST localhost:8080/api/login [200 OK, 348B, 358ms]
+  Pass  Your test name
+  Pass  Status code is 200
+
+Root Create users
+  POST localhost:8080/api/create-users [200 OK, 240B, 651ms]
+  Pass  Status code is 200
+  Pass  Correct response
+
+Root Create table form
+  POST localhost:8080/api/create-table [200 OK, 75B, 12ms]
+  Pass  Status code is 200
+
+Root Get table info
+  GET localhost:8080/api/table-info [200 OK, 541B, 17ms]
+  Pass  Body is correct
+
+Root Insert data
+  POST localhost:8080/api/insert-data [200 OK, 75B, 15ms]
+  Pass  Status code is 200
+
+Root Get data
+  POST localhost:8080/api/get-table-data [200 OK, 172B, 18ms]
+  Pass  Status code is 200
+  Pass  Body is correct
+
+Root Execute query
+  POST localhost:8080/api/execute-queries [200 OK, 322B, 7ms]
+  Pass  Status code is 200
+  Pass  Body is correct
+
+Root Test endpoint
+  POST localhost:8080/api/test-endpoint [200 OK, 511B, 8ms]
+  Pass  Status code is 200
+  Pass  Endpoint data is correct
+
+Root Create endpoint
+  POST localhost:8080/api/create-endpoint [200 OK, 75B, 10ms]
+  Pass  Status code is 200
+
+Root Call endpoint as admin
+  GET localhost:8080/endpoint/test-endpoint [200 OK, 167B, 8ms]
+  Pass  Endpoint data is correct
+  Pass  Status code is 200
+
+Root Get endpoints
+  GET localhost:8080/api/get-endpoints [200 OK, 277B, 7ms]
+  Pass  Status code is 200
+  Pass  Body is correct
+
+Root Create manager user
+  POST localhost:8080/api/create-users [200 OK, 178B, 326ms]
+  Pass  Status code is 200
+  Pass  Your test name
+
+Root Try call worker
+  -
+  | { username: 'sekretarka_1', password: 'lnakvtvburqk47i7' }
+  -
+  POST localhost:8080/api/login [200 OK, 376B, 326ms]
+  -
+  | {
+  |   token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNla3JldGFya2FfMSIsI
+  | nVzZXJfZ3JvdXAiOiJQUkFDT1dOSUNZIiwiZXhwIjoxNjQyOTc4ODc0fQ.rDyyey43zfVXqCa9RNehDPhxpE
+  | 2tkpgchpYEDAwIru0',
+  |   claims: {
+  |     username: 'sekretarka_1',
+  |     user_group: 'PRACOWNICY',
+  |     exp: 1642978874
+  |   }
+  | }
+  -
+  GET localhost:8080/endpoint/test-endpoint [401 Unauthorized, 156B, 5ms]
+  Pass  Status code is 401
+  Pass  Body is correct
+
+Root Call manager
+  -
+  | { username: 'manager_1', password: '7nsncb8198uexunw' }
+  -
+  POST localhost:8080/api/login [200 OK, 364B, 324ms]
+  -
+  | {
+  |   token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im1hbmFnZXJfMSIsInVzZ
+  | XJfZ3JvdXAiOiJNQU5BR0VSUyIsImV4cCI6MTY0Mjk3ODg3NH0.KJEm91S_JrXu-4RV5SzKxQHjH3ya1i1T-
+  | Zqe6OGn-CQ',
+  |   claims: {
+  |     username: 'manager_1',
+  |     user_group: 'MANAGERS',
+  |     exp: 1642978874
+  |   }
+  | }
+  -
+  GET localhost:8080/endpoint/test-endpoint [200 OK, 167B, 5ms]
+  Pass  Status code is 200
+
+--------------------------------------------------------------------
+|                         |           executed |            failed |
+--------------------------+--------------------+--------------------
+|              iterations |                  1 |                 0 |
+--------------------------+--------------------+--------------------
+|                requests |                 16 |                 0 |
+--------------------------+--------------------+--------------------
+|            test-scripts |                 28 |                 0 |
+--------------------------+--------------------+--------------------
+|      prerequest-scripts |                 16 |                 0 |
+--------------------------+--------------------+--------------------
+|              assertions |                 23 |                 0 |
+--------------------------------------------------------------------
+| total run duration: 2.5s                                         |
+--------------------------------------------------------------------
+| total data received: 2.4kB (approx)                              |
+--------------------------------------------------------------------
+| average response time: 131ms [min: 5ms, max: 651ms, s.d.: 193ms] |
+--------------------------------------------------------------------

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.1.13)  14 JAN 2022 21:26
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.1.13)  17 JAN 2022 00:16
  restricted system commands enabled.
 **praca_dyplomowa.tex
 (./praca_dyplomowa.tex
@@ -876,19 +876,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ]) [10] [11] (./sections/key_functionality_implementation.tex
 (./sections/subsections_key_functionality/main_interface.tex
-<./img/starting_view_light.png, id=296, 768.8725pt x 527.9725pt>
+<./img/starting_view_light.png, id=301, 768.8725pt x 527.9725pt>
 File: ./img/starting_view_light.png Graphic file (type png)
 <use ./img/starting_view_light.png>
 Package luatex.def Info: ./img/starting_view_light.png  used on input line 11.
 (luatex.def)             Requested size: 187.57352pt x 128.80254pt.
-<./img/starting_view_dark.png, id=297, 768.8725pt x 527.9725pt>
+<./img/starting_view_dark.png, id=302, 768.8725pt x 527.9725pt>
 File: ./img/starting_view_dark.png Graphic file (type png)
 <use ./img/starting_view_dark.png>
 Package luatex.def Info: ./img/starting_view_dark.png  used on input line 14.
 (luatex.def)             Requested size: 187.57352pt x 128.80254pt.
 )
 (./sections/subsections_key_functionality/generic_cms_functions.tex
-<./img/table_creation.png, id=299, 908.39375pt x 815.045pt>
+<./img/table_creation.png, id=304, 908.39375pt x 815.045pt>
 File: ./img/table_creation.png Graphic file (type png)
 <use ./img/table_creation.png>
 Package luatex.def Info: ./img/table_creation.png  used on input line 36.
@@ -903,7 +903,7 @@ Code(0)/m/n/12 <input type="text">\TU/TimesNewRoman(0)/m/n/12 ,
  []
 
 [13<./img/table_creation.png>]
-<./img/table_data_management.png, id=319, 1015.795pt x 712.6625pt>
+<./img/table_data_management.png, id=324, 1015.795pt x 712.6625pt>
 File: ./img/table_data_management.png Graphic file (type png)
 <use ./img/table_data_management.png>
 Package luatex.def Info: ./img/table_data_management.png  used on input line 71
@@ -917,7 +917,7 @@ Overfull \hbox (0.92638pt too wide) in paragraph at lines 5--8
 na wy-godne edy-to-wa-nie, te-sto-wa-nie i wy-
  []
 
-<./img/sql_editor.png, id=330, 706.64pt x 881.2925pt>
+<./img/sql_editor.png, id=335, 706.64pt x 881.2925pt>
 File: ./img/sql_editor.png Graphic file (type png)
 <use ./img/sql_editor.png>
 Package luatex.def Info: ./img/sql_editor.png  used on input line 43.
@@ -925,27 +925,27 @@ Package luatex.def Info: ./img/sql_editor.png  used on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/test_query_before.png, id=331, 587.19376pt x 881.2925pt>
+<./img/test_query_before.png, id=336, 587.19376pt x 881.2925pt>
 File: ./img/test_query_before.png Graphic file (type png)
 <use ./img/test_query_before.png>
 Package luatex.def Info: ./img/test_query_before.png  used on input line 51.
 (luatex.def)             Requested size: 170.71652pt x 256.21375pt.
-<./img/test_query_after.png, id=332, 587.19376pt x 881.2925pt>
+<./img/test_query_after.png, id=337, 587.19376pt x 881.2925pt>
 File: ./img/test_query_after.png Graphic file (type png)
 <use ./img/test_query_after.png>
 Package luatex.def Info: ./img/test_query_after.png  used on input line 54.
 (luatex.def)             Requested size: 170.71652pt x 256.21375pt.
-<./img/diagram_diff_before.png, id=333, 836.12375pt x 948.54375pt>
+<./img/diagram_diff_before.png, id=338, 836.12375pt x 948.54375pt>
 File: ./img/diagram_diff_before.png Graphic file (type png)
 <use ./img/diagram_diff_before.png>
 Package luatex.def Info: ./img/diagram_diff_before.png  used on input line 63.
 (luatex.def)             Requested size: 195.91196pt x 222.24202pt.
-<./img/diagram_diff_after.png, id=334, 645.41125pt x 695.59875pt>
+<./img/diagram_diff_after.png, id=339, 645.41125pt x 695.59875pt>
 File: ./img/diagram_diff_after.png Graphic file (type png)
 <use ./img/diagram_diff_after.png>
 Package luatex.def Info: ./img/diagram_diff_after.png  used on input line 66.
 (luatex.def)             Requested size: 195.91196pt x 211.14368pt.
-<./img/diagram_diff_after_fullscreen.png, id=335, 645.41125pt x 695.59875pt>
+<./img/diagram_diff_after_fullscreen.png, id=340, 645.41125pt x 695.59875pt>
 File: ./img/diagram_diff_after_fullscreen.png Graphic file (type png)
 <use ./img/diagram_diff_after_fullscreen.png>
 Package luatex.def Info: ./img/diagram_diff_after_fullscreen.png  used on input
@@ -972,7 +972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-<./img/endpoint_creation.png, id=404, 915.42pt x 885.3075pt>
+<./img/endpoint_creation.png, id=409, 915.42pt x 885.3075pt>
 File: ./img/endpoint_creation.png Graphic file (type png)
 <use ./img/endpoint_creation.png>
 Package luatex.def Info: ./img/endpoint_creation.png  used on input line 113.
@@ -989,7 +989,7 @@ Overfull \hbox (7.72339pt too wide) in paragraph at lines 118--122
 r-mu-la-rza przy-cho-dzą-cego w za-py-ta-niu HTTP. 
  []
 
-<./img/endpoint_testing.png, id=406, 966.61125pt x 979.66pt>
+<./img/endpoint_testing.png, id=411, 966.61125pt x 979.66pt>
 File: ./img/endpoint_testing.png Graphic file (type png)
 <use ./img/endpoint_testing.png>
 Package luatex.def Info: ./img/endpoint_testing.png  used on input line 130.
@@ -1003,7 +1003,7 @@ Overfull \hbox (81.60925pt too wide) in paragraph at lines 135--138
 ścieżka punktu końcowego>\TU/TimesNewRoman(0)/m/n/12 .
  []
 
-<./img/endpoint_firefox.png, id=408, 854.19125pt x 630.355pt>
+<./img/endpoint_firefox.png, id=413, 854.19125pt x 630.355pt>
 File: ./img/endpoint_firefox.png Graphic file (type png)
 <use ./img/endpoint_firefox.png>
 Package luatex.def Info: ./img/endpoint_firefox.png  used on input line 141.
@@ -1020,7 +1020,7 @@ LaTeX Font Info:    Font shape `TU/FiraCode(0)/m/n' will be
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./img/variable_resolution.png, id=427, 258.0039pt x 192.4791pt>
+<./img/variable_resolution.png, id=432, 258.0039pt x 192.4791pt>
 File: ./img/variable_resolution.png Graphic file (type png)
 <use ./img/variable_resolution.png>
 Package luatex.def Info: ./img/variable_resolution.png  used on input line 70.
@@ -1076,21 +1076,38 @@ many_supers \TU/TimesNewRoman(0)/m/n/12 - test spraw-dza
  []
 
 [29]
-<./img/postman_test_exec.png, id=617, 466.74374pt x 849.1725pt>
-File: ./img/postman_test_exec.png Graphic file (type png)
-<use ./img/postman_test_exec.png>
-Package luatex.def Info: ./img/postman_test_exec.png  used on input line 97.
-(luatex.def)             Requested size: 250.10226pt x 455.02193pt.
- [30<./img/postman_test_exec.png>]) [31] (./sections/ending.tex
+
+LaTeX Warning: Reference `postmanTestExec' on page 30 undefined on input line 9
+3.
+
+[30] [31]
+Overfull \hbox (5.19452pt too wide) in paragraph at lines 231--233
+[]\TU/TimesNewRoman(0)/m/n/12 Otwo-rze-nie w do-wol-nej kar-cie kom-po-nentu za-
+wie-ra-ją-cego stan (na przy-
+ []
+
+
+Overfull \hbox (1.89764pt too wide) in paragraph at lines 263--265
+[]\TU/TimesNewRoman(0)/m/n/12 Wci-śnię-cie przy-ci-sku ``New block'' pod ostat
+-nim po-lem tek-sto-wym z za-
+ []
+
+[32]
+Overfull \hbox (1.89764pt too wide) in paragraph at lines 329--331
+[]\TU/TimesNewRoman(0)/m/n/12 Wci-śnię-cie przy-ci-sku ``New block'' pod ostat
+-nim po-lem tek-sto-wym z za-
+ []
+
+) [33] (./sections/ending.tex
 Overfull \hbox (1.55658pt too wide) in paragraph at lines 38--45
 []\TU/TimesNewRoman(0)/m/n/12 Ko-lejną funk-cją, jaką warto w przy-szło-ści
  za-im-ple-men-to-wać jest udo-stęp-nie-nie użyt-
  []
 
-[32
+[34
 
 
-]) [33] (./praca_dyplomowa.bbl
+]) [35] (./praca_dyplomowa.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |\TU/ArialNarrowBold(0)/b/n/14 Li-te-ra-tura|
  []
@@ -1101,47 +1118,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []it-[]is-[]and-[]why-[]you-[]should-[]use-[]it/$[].
  []
 
-) [34
+) [36
 
 ] (./praca_dyplomowa.lof)
 \tf@lof=\write5
 
 \openout5 = praca_dyplomowa.lof
- [35
+ [37
 
 ] (./praca_dyplomowa.lol)
 \tf@lol=\write6
 
 \openout6 = praca_dyplomowa.lol
- [36
+ [38
 
 ]
 (./praca_dyplomowa.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: FF131D357DBDF70F5C9A114EEBB2A9E3;3969.
+(rerunfilecheck)             Checksum: 2A96510AD09F13894E90B00421D1B221;4100.
 )
 
 Here is how much of LuaTeX's memory you used:
- 17311 strings out of 478388
- 305233,794899 words of node,token memory allocated
+ 17326 strings out of 478388
+ 305245,794899 words of node,token memory allocated
  742 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 25 attribute, 86 glue_spec
 , 14 attribute_list, 1 write, 9 pdf_action nodes
-   avail lists: 1:2,2:7301,3:387,4:64,5:7039,6:100,7:13211,8:94,9:14288,10:34,11
+   avail lists: 1:1,2:7301,3:386,4:64,5:7050,6:100,7:13211,8:94,9:14288,10:34,11
 :1101
- 36098 multiletter control sequences out of 65536+600000
+ 36093 multiletter control sequences out of 65536+600000
  73 fonts using 11883855 bytes
  69i,10n,123p,351b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/fonts/fira-code/FiraCode-Regular.ttf></usr/share/fonts/ms-core/Times
 .ttf></usr/share/fonts/ms-core/TimesBd.ttf></usr/share/fonts/ms-arial-narrow/ARI
 ALN.TTF></usr/share/fonts/ms-arial-narrow/ARIALNB.TTF>
-Output written on praca_dyplomowa.pdf (44 pages, 819147 bytes).
+Output written on praca_dyplomowa.pdf (46 pages, 784355 bytes).
 
-PDF statistics: 746 PDF objects out of 1000 (max. 8388607)
- 648 compressed objects within 7 object streams
- 336 named destinations out of 1000 (max. 131072)
- 193 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 778 PDF objects out of 1000 (max. 8388607)
+ 680 compressed objects within 7 object streams
+ 362 named destinations out of 1000 (max. 131072)
+ 201 words of extra memory for PDF output out of 10000 (max. 100000000)
 

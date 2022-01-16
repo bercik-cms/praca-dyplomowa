@@ -90,14 +90,15 @@ do testowania API. Testy napisane w tym programie można wyeksportować do pliku
 json, który można wykonać z poziomu powłoki tekstowej za pomocą programu
 newman. Pozwala to na automatyczne wykonywanie testów.
 
-Wykonanie testów integracyjnych widać na rysunku \ref{postmanTestExec}.
+Wykonanie testów integracyjnych widać na listingu \ref{postmanTestExec}.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.6\textwidth]{./img/postman_test_exec.png}
-    \caption{Wykonanie testów integracyjnych w programie Postman}
-    \label{postmanTestExec}
-\end{figure}
+% \lstinputlisting[
+%     frame=tb,
+%     label={postmanTestExec},
+%     caption={Wykonanie testów integracyjnych za pomocą programu \verb|newman|.
+%         Dla poprawienia przejrzystości usunięto tokeny JWT.}
+% ]{./code/newmanIntegration.txt}
+
 
 \FloatBarrier
 
@@ -148,6 +149,193 @@ insert into test_table_one (name, age)
 
     \item Test endpoint - test wysyła do serwera zapytanie będące wariantem
         zapytania, jakie wysyła aplikacja frontend w celu przetestowania
-        tworzonego punktu końcowego.
+        tworzonego punktu końcowego. Test sprawdza poprawność odesłanej przez
+        serwer odpowiedzi.
+
+    \item Create endpoint - test wysyła do serwera zapytanie będące wariantem
+        zapytania, które aplikacja frontend wysyła w celu stworzenia punktu
+        końcowego. Test spradza, czy odpowiedź od serwera ma kod HTTP 200 OK.
+
+    \item Call endpoint - test wywołuje punkt końcowy stworzony w teście 8. Test
+        sprawdza, czy wysłana przez serwer odpowiedź zawiera poprawne dane.
+
+    \item Get endpoints - test wysyła do serwera zapytanie będące wariantem
+        zapytania wysyłanego przez aplikację frontend w celu pobrania od serwera
+        informacji o istniejących punktach końcowych. Test sprawdza, czy w
+        odpowiedzi znajdują się dane o punkcie końcowym stworzonym w teście 8.
+
+\end{enumerate}
+
+\subsection{Testy manualne}
+
+Poprawne działanie funkcji aplikacji frontend zostało zweryfikowane za pomocą
+testów manualnych. Scenariusze testów manualnych zostały przedstawione
+poniżej.
+
+\begin{enumerate}
+
+    \item \textbf{Testowanie poprawnego działania systemu kart.}
+
+        \begin{enumerate}
+
+            \item \textbf{Testowanie poprawnego tworzenia nowej karty.}
+
+                \textbf{Przebieg testu:}
+
+                \begin{enumerate}
+
+                    \item Wciśnięcie przycisku ``+'' po lewej stronie paska
+                        kart.
+
+                \end{enumerate}
+
+                \textbf{Spodziewany wynik:}
+
+                Jeśli ostatnia karta znajduje się na widoku startowym, powinna
+                zostać wybrana jako aktywna. Jeśli już była aktywna, powinna
+                pozostać aktywna.
+
+                Jeśli ostatnia karta nie znajduje się na widoku startowym,
+                powinna zostać stworzona nowa karta znajdująca się na widoku
+                startowym. Nowa karta powinna zostać wybrana jako aktywna.
+
+            \item \textbf{Testowanie poprawnego zamykania karty.}
+
+                \textbf{Przebieg testu:}
+
+                \begin{enumerate}
+
+                    \item Wciśnięcie przycisku ``x'' po prawej stronie karty,
+                        lub wciśnięcie dowolnego miejsca karty środkowym
+                        przyciskiem myszki.
+
+                \end{enumerate}
+
+                \textbf{Spodziewany wynik:}
+
+                Jeśli karta, którą spróbowano zamknąć jest jedyną kartą i nie
+                jest na widoku startowym, nie powinno się nic stać. Jeśli karta
+                jest jedyną i nie jest na widoku startowym, w karcie powinien
+                zostać otworzony widok startowy.
+
+                Jeśli karta, którą spróbowano zamknąć nie jest jedyną kartą,
+                karta powinna przestać istnieć. Dowolna sąsiedna karta do karty
+                zamkniętej powinna zostać wybrana jako aktywna.
+
+            \item \textbf{Testowanie poprawnego zachowania stanu w karcie.}
+
+                \textbf{Przebieg testu:}
+
+                \begin{enumerate}
+
+                    \item Otworzenie w dowolnej karcie komponentu zawierającego
+                        stan (na przykład pole tekstowe).
+
+                    \item Zmiana stanu komponentu (na przykład wpisanie dowonego
+                        tekstu do pola tekstowego).
+
+                    \item Przełączenie aktywnej karty na dowolną inną kartę.
+
+                    \item Przełączenie aktywnej karty na kartę otwartą w kroku
+                        i.
+
+                \end{enumerate}
+
+                \textbf{Spodziewany wynik:}
+
+                Stan komponentu po ponownym otwarciu karty powinien być
+                identyczny do stanu przed pierwszym przełączeniem aktywnej
+                karty.
+
+        \end{enumerate}
+
+    \item \textbf{Testowanie poprawnego działania edytora zapytań SQL
+        wykonywanych natychmiast.}
+
+        \begin{enumerate}
+
+            \item \textbf{Testowanie poprawnego tworzenia nowego zapytania.}
+
+                \textbf{Przebieg testu:}
+
+                \begin{enumerate}
+
+                    \item Wciśnięcie przycisku ``New block'' pod ostatnim
+                        polem tekstowym z zapytaniem SQL.
+
+                \end{enumerate}
+
+                \textbf{Spodziewany wynik:}
+
+                Pod ostatnim edytorem zapytania SQL pojawi się nowy edytor
+                zapytania SQL.
+
+
+            \item \textbf{Testowanie poprawnego usuwania zapytania SQL.}
+
+                \textbf{Przebieg testu:}
+
+                \begin{enumerate}
+
+                    \item Wciśnięcie przycisku ``Delete'' po lewej stronie pola
+                        teskstowego z zapytaniem SQL.
+
+                \end{enumerate}
+
+                \textbf{Spodziewany wynik:}
+
+                Jeśli edytor jest jedynym edytorem, treść zapytania SQL zostanie
+                usunięta.
+
+                Jeśli edytor nie jest jedynym edytorem, zostanie usunięty z
+                listy edytorów.
+
+            \item \textbf{Testowanie poprawnego wyłączania zapytania SQL.}
+
+                \textbf{Przebieg testu:}
+
+                \begin{enumerate}
+
+                    \item Wciśnięcie przycisku ``Disable'' po lewej stronie pola
+                        teskstowego z zapytaniem SQL.
+
+                    \item Wciśnięcie przycisku ``Enable'' po lewej stronie pola
+                        teskstowego z zapytaniem SQL.
+
+                \end{enumerate}
+
+                \textbf{Spodziewany wynik:}
+
+                Po wciśnięciu przycisku ``Disable'', tło zostanie przyciemnione w
+                trybie jasnym lub rozjaśnione w trybie ciemnym. Całe pole
+                tekstowe stanie się przezroczyste. Pisanie w polu tekstowym nie
+                będzie możliwe.
+
+                Po wciśnięciu przycisku ``Enable'', działanie przycisku
+                ``Disable'' zostanie odwrócone.
+
+        \end{enumerate}
+
+    \item \textbf{Testowanie poprawnego działania edytora punktów końcowych.}
+
+        \begin{enumerate}
+
+            \item \textbf{Testowanie poprawnego tworzenia nowego zapytania.}
+
+                \textbf{Przebieg testu:}
+
+                \begin{enumerate}
+
+                    \item Wciśnięcie przycisku ``New block'' pod ostatnim
+                        polem tekstowym z zapytaniem SQL.
+
+                \end{enumerate}
+
+                \textbf{Spodziewany wynik:}
+
+                Pod ostatnim edytorem zapytania SQL pojawi się nowy edytor
+                zapytania SQL.
+
+        \end{enumerate}
 
 \end{enumerate}

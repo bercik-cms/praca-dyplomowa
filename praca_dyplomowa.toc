@@ -22,4 +22,5 @@
 \contentsline {section}{\numberline {6}WERYFIKACJA PRACY PROGRAMU}{28}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Testy jednostkowe}{28}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Testy integracyjne}{30}{subsection.6.2}%
-\contentsline {section}{\numberline {7}PODSUMOWANIE}{32}{section.7}%
+\contentsline {subsection}{\numberline {6.3}Testy manualne}{31}{subsection.6.3}%
+\contentsline {section}{\numberline {7}PODSUMOWANIE}{34}{section.7}%
