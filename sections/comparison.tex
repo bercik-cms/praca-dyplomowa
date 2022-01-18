@@ -2,18 +2,31 @@
 
 \subsection{Wordpress}
 
-Pierwszym omawianym systemem zarządzania treścią jest Wordpress. Jest to
-najbardziej popularny CMS. Ten system został napisany z myślą o prezentowaniu
-treści w formie strony HTML. Wordpress jest napisany w języku PHP i do działania
-wymaga zainstalowania serwera HTTP. Pierwsze wydanie systemu miało miejsce w
-roku 2003 i od tamtej pory system jest ciągle rozwijany.
+Wordpres to najbardziej popularny CMS. Ten system został napisany z myślą o
+prezentowaniu treści w formie strony HTML. Wordpress jest napisany w języku PHP
+i do działania wymaga zainstalowania serwera HTTP oraz interpretera PHP.
+Pierwsze wydanie systemu miało miejsce w roku 2003 i od tamtej pory system jest
+ciągle rozwijany.
 
-Wordpress pozwala na definiowanie własnych modeli, ale nie jest to wspierane w
-domyślnym panelu administratora. Do stworzenia nowego typu danych, wymagane jest
-wywołanie funkcji PHP udostępnionej przez Wordpress, do której nie ma domyślnie
-interfejsu użytkownika. Polecanym przez twórców sposobem tworzenia nowych typów
-danych jest zainstalowanie wtyczki, która implementuje taki interfejs
+Modele w systemie CMS to typy danych, którymi można zarządzać. Domyślnym
+modelem, w systemie Wordpress jest wpis w blogu. Zawiera między innymi tytuł,
+tekst wpisu i datę publikacji. Interfejs tworzenia nowego postu został
+przedstawiony na rysunku \ref{wordpressNewPost}. Wordpress pozwala na
+definiowanie własnych modeli, ale nie jest to wspierane w domyślnym panelu
+administratora. Do stworzenia nowego typu danych, wymagane jest wywołanie
+funkcji PHP udostępnionej przez Wordpress, do której nie ma domyślnie interfejsu
+użytkownika. Polecanym przez twórców sposobem tworzenia nowych typów danych jest
+zainstalowanie wtyczki, która implementuje taki interfejs
 \cite{WordpressCustomType}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{./img/wordpress_new_post.png}
+    \caption{Tworzenie nowego wpisu w systemie Wordpress}
+    \label{wordpressNewPost}
+\end{figure}
+
+\FloatBarrier
 
 % https://wordpress.stackexchange.com/questions/158742/add-custom-objects-entities-to-wordpress
 % https://developer.wordpress.org/reference/functions/register_post_type/
