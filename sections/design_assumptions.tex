@@ -1,0 +1,102 @@
+\section{ZAŁOŻENIA PROJEKTOWE TWORZONEGO SYSTEMU}
+
+\subsection{Założenia funkcjonalne}
+
+\begin{enumerate}
+
+    \item Responsywny interfejs aplikacji.
+
+    \item System kart pozwalający na wygodną pracę z wieloma funkcjami
+        systemu w tym samym czasie.
+
+    \item Interfejs umożliwiający tworzenie nowych tabel w bazie danych bez
+        pisania zapytań SQL.
+
+    \item Interfejs umożliwiający proste zarządzanie danymi w bazie danych bez
+        pisania zapytań SQL.
+
+    \item Edytor zapytań SQL wykonywanych natychmiast.
+
+    \item Możliwość wygodnego pisania dowolnej ilości zapytań SQL w edytorze
+        zapytań wykonywanych natychmiast.
+
+    \item Możliwość manipulowania listą zapytań SQL w edytorze zapytań
+        wykonywanych natychmiast. W tym możliwość zmiany kolejności zapytań,
+        możliwość wyłączania zapytania z uruchomienia i możliwość usuwania
+        zapytania z listy zapytań.
+
+    \item Możliwość testowego wykonywania zapytań bez zmiany danych w bazie
+        danych.
+
+    \item Możliwość podglądu wyników zapytań zwracających dane przy testowym
+        wykonywaniu listy zapytań.
+
+    \item Możliwość napisania zapytania testowego, które zostanie wykonane przed
+        i po wykonaniu listy zapytań w celu porównania wyniku zapytania
+        testowego.
+
+    \item Możliwość wygodnego porównania wyniku zapytania testowego przed i po
+        wykonaniu listy zapytań.
+
+    \item Możliwość wygenerowania diagramu ER bazy danych.
+
+    \item Możliwość wygenerowania diagramu przed i po testowym wykonaniu listy
+        zapytań SQL w celu porównania struktury bazy danych.
+
+    \item Możliwość pełnoekranowego podglądu diagramu ER.
+
+    \item Możliwość tworzenia przez administratora punktów końcowych, których
+        wywołanie za pomocą zapytania HTTP spowoduje wykonanie zdefiniowanego
+        drzewa zapytań SQL i zwrócenie wyników zapytań w odpowiedzi HTTP.
+
+    \item Możliwość definiowania zapytań podrzędnych do zapytania z drzewa
+        zapytań SQL, które zostaną wykonane dla każdego rzędu tablicy będącej
+        wynikiem wykonania drzewa nadrzędnego.
+
+    \item Możliwość korzystania z danych z zapytań nadrzędnych w zapytaniach
+        podrzędnych w drzewie zapytań SQL.
+
+    \item Możliwość ustalenia adresu URL tworzonego punktu końcowego.
+
+    \item Możliwość ustalenia metod HTTP, których można użyć do wywołania punktu
+        końcowego.
+
+    \item Możliwość korzystania z danych przychodzących w zapytaniu HTTP w
+        zapytaniach SQL wykonywanych przy wywołaniu punktu końcowego.
+
+    \item Możliwość ograniczenia możliwości wykonania punktu końcowego do
+        ustalonej listy grup użytkowników.
+
+    \item Możliwość edycji i usuwania istniejących punktów końcowych.
+
+    \item Możliwość tworzenia kont użytkowników przez administratora.
+
+    \item Możliwość tworzenia dowolnej ilości kont użytkowników w ramach jednej
+        operacji.
+
+    \item Możliwość przypisywania tworzonych kont użytkowników do grup
+        użytkowników.
+
+    \item Możliwość usuwania kont użytkowników przez administratora.
+
+    \item Możliwość zmiany hasła przez użytkowników.
+
+    \item Przechowywanie danych użytkowników w systemie w taki sposób, że dane
+        przechowywane w pamięci nieulotnej nie pozwolą na zalogowanie się do
+        systemu.
+
+\end{enumerate}
+
+\subsection{Założenia niefunkcjonalne}
+
+\begin{enumerate}
+
+    \item Wielowątkowe działanie aplikacji backend.
+
+    \item Asynchroniczne wykonywanie operacji wejścia-wyjścia przez aplikację
+        backend.
+
+    \item Wykorzystywanie mniej niż dziesięciu megabajtów pamięci RAM przez
+        aplikację backend w stanie spoczynku.
+
+\end{enumerate}

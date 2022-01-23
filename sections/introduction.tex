@@ -1,7 +1,5 @@
 \section{WSTĘP}
 
-\subsection{Przybliżenie domeny pracy}
-
 W ostatnich latach można zaobserwować zanikanie podziału pomiędzy mediami
 drukowanymi a internetowymi. Większość organizacji publikujących treści prowadzi
 strony internetowe. Wiele innych organizacji nie zajmujących się mediami zmaga
@@ -22,8 +20,6 @@ małych instytucji, jak i dużych organizacji, które przechowują duże ilości
 danych. Wątpliwe jest nawet, czy taki system mógłby zostać zbudowany, ponieważ
 wymagania z różnych przypadków użycia są zupełnie inne \cite{Mauthe_2004}.
 
-\vspace{.5cm}
-
 Ostatnio, popularne stały się systemy headless CMS \cite{WhyHeadlessCMS}. Są to
 systemy CMS pozbawione warstwy prezentacji. Są one zazwyczaj mniej skomplikowane
 od tradycyjnych systemów i nie ograniczają wyboru technologii, której można użyć
@@ -32,23 +28,31 @@ spełniają się w architekturze mikroserwisów, lub gdy produkowane treści są
 wyświetlane w różnych formach — na przykład na stronie internetowej i w
 aplikacji mobilnej \cite{WhyHeadlessCMS}.
 
+\medspace
+
 Zdaniem autora pracy, mimo że systemy headless CMS nie ograniczają warstwy
-prezentacji, nie oferują większych, niż tradycyjne systemy możliwości
-operowania na warstwie danych. 
+prezentacji, nie oferują większych, niż tradycyjne systemy możliwości operowania
+na warstwie danych. Z tego powodu, w ramach tej pracy, przygotowano system
+headless CMS, którego założeniem było nie ograniczanie możliwości operowania na
+bazie danych przez umożliwienie administratorom wykonywania natywnych zapytań
+SQL.
 
-Z tego powodu, w ramach tej pracy, przygotowano system headless CMS, którego
-założeniem było nie ograniczanie możliwości operowania na bazie danych przez
-umożliwienie administratorom wykonywania natywnych zapytań SQL.
+Kolejnym punktem, gdzie ograniczane są możliwości administratora jest
+definiowanie własnych punktów końcowych. Większość systemów CMS zupełnie nie
+posiada takiej funkcji, lub wymaga ona pisania przez administratora kodu w
+języku innym, niż SQL. Z tego powodu, kolejnym założeniem przygotowanego systemu
+było umożliwienie administratorom definiowania własnych punktów końcowych HTTP i
+zapytań SQL, które zostaną wykonane przy wywołaniu punktów końcowych i których
+wyniki zostaną zwrócone w odpowiedzi HTTP.
 
-\vspace{.5cm}
+\vspace{2cm}
 
-W rozdziale 2 został omówiony cel i zakres pracy. Opisano system, jakiego
-przygotowanie było celem pracy i funkcjonalności jego komponentów. W rozdziale 3
-przedstawione zostały systemy CMS jak i inne systemy spełniające pewien zakres
-problemów, który chce spełnić przygotowany w ramach pracy system. W celu
-uzasadnienia potrzeby przygotowania systemu, zwrócono uwagę na problemy, które
-nie są rozwiązane przez poszczególne systemy dostępne na rynku. W rozdziale 4
-omówiono ogólną strukturę kodu programu. W rozdziale 5 omówiono szczegółowo, jak
-zaimplementowano każdą z kluczowych funkcji systemu. W rozdziale 6 omówiono
-używane przy pisaniu programu sposoby weryfikacji działania kodu. Pracę kończy
-rozdział z podsumowaniem i planem dalszego rozwoju.
+W rozdziale 2 przedstawione zostały systemy CMS jak i inne systemy spełniające
+pewien zakres problemów, który chce spełnić przygotowany w ramach pracy system.
+W celu uzasadnienia potrzeby przygotowania systemu, zwrócono uwagę na problemy,
+które nie są rozwiązane przez poszczególne systemy dostępne na rynku. W
+rozdziale 3 przedstawiono założenia projektowe funkcjonalne i niefunkcjonalne
+tworzonego systemu. W rozdziale 4 omówiono szczegółowo, jak zaimplementowano
+każdą z kluczowych funkcji systemu. W rozdziale 5 omówiono używane przy pisaniu
+programu sposoby weryfikacji działania kodu. Pracę kończy rozdział z
+podsumowaniem i planem dalszego rozwoju.

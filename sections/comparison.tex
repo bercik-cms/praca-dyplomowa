@@ -2,7 +2,7 @@
 
 \subsection{Wordpress}
 
-Wordpres to najbardziej popularny CMS. Ten system został napisany z myślą o
+Wordpress to najbardziej popularny CMS. Ten system został napisany z myślą o
 prezentowaniu treści w formie strony HTML. Wordpress jest napisany w języku PHP
 i do działania wymaga zainstalowania serwera HTTP oraz interpretera PHP.
 Pierwsze wydanie systemu miało miejsce w roku 2003 i od tamtej pory system jest
@@ -10,14 +10,8 @@ ciągle rozwijany.
 
 Modele w systemie CMS to typy danych, którymi można zarządzać. Domyślnym
 modelem, w systemie Wordpress jest wpis w blogu. Zawiera między innymi tytuł,
-tekst wpisu i datę publikacji. Interfejs tworzenia nowego postu został
-przedstawiony na rysunku \ref{wordpressNewPost}. Wordpress pozwala na
-definiowanie własnych modeli, ale nie jest to wspierane w domyślnym panelu
-administratora. Do stworzenia nowego typu danych, wymagane jest wywołanie
-funkcji PHP udostępnionej przez Wordpress, do której nie ma domyślnie interfejsu
-użytkownika. Polecanym przez twórców sposobem tworzenia nowych typów danych jest
-zainstalowanie wtyczki, która implementuje taki interfejs
-\cite{WordpressCustomType}.
+tekst wpisu i datę publikacji. Interfejs tworzenia nowego wpisu został
+przedstawiony na rysunku \ref{wordpressNewPost}.
 
 \begin{figure}[h]
     \centering
@@ -25,16 +19,6 @@ zainstalowanie wtyczki, która implementuje taki interfejs
     \caption{Tworzenie nowego wpisu w systemie Wordpress}
     \label{wordpressNewPost}
 \end{figure}
-
-\FloatBarrier
-
-% https://wordpress.stackexchange.com/questions/158742/add-custom-objects-entities-to-wordpress
-% https://developer.wordpress.org/reference/functions/register_post_type/
-
-Pisanie własnych zapytań SQL jest możliwe, ale podobnie jak definiowanie
-niestandardowych typów, domyślnie nie posiada interfejsu. W celu napisania
-własnego zapytania, trzeba to zrobić z poziomu PHP, lub zainstalować wtyczkę
-umożliwiającą pisanie własnych zapytań z panelu administratora.
 
 W wersji 5.0 Wordpress, dodano nowy edytor ``Gutenberg'' pozwalający na
 tworzenie postów opartych o bloki. Jest to mniej skomplikowana alternatywa dla
@@ -49,11 +33,37 @@ wpisie.
 
 Wpisy oparte o bloki mogą być wygodnie tworzone w dużo prostszych edytorach.
 Zmniejsza to potrzebę stosowania skomplikowanych systemów CMS do zarządzania
-treścią.
+treścią. Edytor Gutenberg został przedstawiony na rysunku \ref{gutenbergFigure}.
 
-Podsumowując, Wordpress to oprogramowanie, które dobrze spełnia potrzeby autora
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{./img/gutenberg.png}
+    \caption{Edytor Gutenberg}
+    \label{gutenbergFigure}
+\end{figure}
+
+\FloatBarrier
+
+Wordpress to oprogramowanie, które dobrze spełnia potrzeby autora
 bloga. Znaczną zaletą systemu Wordpress jest ekosystem wtyczek pozwalających na
 rozwiązanie większości problemów związanych z zarządzaniem danymi.
+
+\medspace
+
+% https://wordpress.stackexchange.com/questions/158742/add-custom-objects-entities-to-wordpress
+% https://developer.wordpress.org/reference/functions/register_post_type/
+
+Wordpress pozwala na definiowanie własnych modeli, ale nie jest to wspierane w
+domyślnym panelu administratora. Do stworzenia nowego typu danych, wymagane jest
+wywołanie funkcji PHP udostępnionej przez Wordpress, do której nie ma domyślnie
+interfejsu użytkownika. Polecanym przez twórców sposobem tworzenia nowych typów
+danych jest zainstalowanie wtyczki, która implementuje taki interfejs
+\cite{WordpressCustomType}.
+
+Pisanie własnych zapytań SQL jest możliwe, ale podobnie jak definiowanie
+niestandardowych typów, domyślnie nie posiada interfejsu. W celu napisania
+własnego zapytania, trzeba to zrobić z poziomu PHP, lub zainstalować wtyczkę
+umożliwiającą pisanie własnych zapytań z panelu administratora.
 
 System Wordpress domyślnie znacznie ogranicza możliwości administratora. W celu
 wykonywania niestandardowych operacji na bazie danych, administrator musi
@@ -67,14 +77,51 @@ spełnienia tych celów. Niezbędne byłoby poleganie na dużej ilości wtyczek,
 napisanie tych wtyczek samemu, co może być bardziej skomplikowane, niż napisanie
 systemu backend spełniającego potrzeby jednej strony internetowej.
 
-(TODO: cite Wordpress bible)
-
 \subsection{Strapi}
 
 Strapi to system Headless CMS. Nie posiada on interfejsu użytkownika. Dane
-wprowadzane do systemu są pobierane za pomocą API REST. Domyślne API ma
-ograniczoną funkcjonalność. Pobieranie danych z CMS jest ograniczone do
-pobierania wszystkich wpisów danego typu, lub jednego wpisu, ale tylko po id.
+wprowadzane do systemu są pobierane za pomocą API REST.
+
+Dużą zaletą systemu Strapi w porównaniu do systemu Wordpress jest to, że został
+zaprojektowany z myślą o tworzeniu przez administratorów niestandardowych
+modeli. Niestandardowe modele w systemie Strapi tworzy się przy użyciu
+interfejsu graficznego w panelu administratora. Wprowadzanie nowego elementu do
+kolekcji niestandardowych modeli (restauracji) przedstawiono na rysunku
+\ref{strapiNewEntry}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{./img/strapi_new_entry.png}
+    \caption{Tworzenie nowego elementu w systemie Strapi}
+    \label{strapiNewEntry}
+\end{figure}
+
+Strapi zawiera łatwy w obsłudze graficzny edytor relacji między danymi. Wspiera
+relacje jeden-do-jednego, jeden-do-wielu i wiele-do-wielu. Ponadto można ustawić
+relacje tak żeby były widoczne w jednym modelu i niewidoczne w drugim. Edytor
+relacji przedstawiono na rysunku \ref{strapiRelationsEditor}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{./img/strapi_relations_editor.png}
+    \caption{Edytor relacji w Strapi}
+    \label{strapiRelationsEditor}
+\end{figure}
+
+Strapi umożliwia operowanie na danych za pomocą GraphQL. Ta opcja pozwala na
+pobieranie konkretnych danych o wpisie zamiast całości informacji. W celu
+pobierania niestandardowych informacji, wymagane jest pisanie własnych
+``resolwerów''. Pisanie resolwerów przypomina pisanie funkcji obsługującej
+zapytania do REST API. Wymaga pisania kodu źródłowego w języku JavaScript.
+
+Strapi jest dobrym wyborem, jeśli potrzebny jest system CMS
+pozwalający na bardziej złożone od CRUD operacje na danych. Niezbędne będzie
+jednak pisanie własnych funkcji obsługujących zapytania z wykorzystaniem
+ograniczonego API do operacji na bazie danych.
+
+Domyślne API ma ograniczoną funkcjonalność. Pobieranie danych z CMS bez użycia
+GraphQL jest ograniczone do pobierania wszystkich wpisów danego typu, lub
+jednego wpisu, ale tylko po id.
 
 Strapi umożliwia tworzenie własnych punktów końcowych. Administrator może ustawić
 ścieżkę i funkcję, która obsłuży zapytania na daną ścieżkę. Nie da się jednak
@@ -89,17 +136,6 @@ biblioteka do operacji na bazie danych z poziomu języka JavaScript. API
 udostępnione programistom przez ``query engine'' jest znacznie ograniczone w
 porównaniu do natywnego SQL. Nie można używać funkcji specyficznych do wybranej
 bazy danych. Operacje są ograniczone do prostych zapytań CRUD.
-
-Strapi umożliwia operowanie na danych za pomocą GraphQL. Ta opcja pozwala na
-pobieranie konkretnych danych o wpisie zamiast całości informacji. W celu
-pobierania niestandardowych informacji, wymagane jest pisanie własnych
-``resolwerów''. Pisanie resolwerów przypomina pisanie funkcji obsługującej
-zapytania do REST API. Wymaga pisania kodu źródłowego w języku JavaScript.
-
-Podsumowując, Strapi jest dobrym wyborem, jeśli potrzebny jest system CMS
-pozwalający na bardziej złożone od CRUD operacje na danych. Niezbędne będzie
-jednak pisanie własnych funkcji obsługujących zapytania z wykorzystaniem
-ograniczonego API do operacji na bazie danych.
 
 Znacznym minusem Strapi są duże wymagania wobec sprzętu. Minimalna ilość pamięci
 to 2GB \cite{StrapiDeployment}. Nie jest to problem dla przedsiębiorstw, ale
@@ -140,15 +176,8 @@ GET /films?select=title,actors!inner(first_name,last_name)
 }]
 \end{verbatim}
 
-Podsumowując, jeśli aplikacja będzie wymagała dużej ilości niestandardowych
+Jeśli aplikacja będzie wymagała dużej ilości niestandardowych
 operacji na bazie danych, PostgREST z dodatkiem prostej aplikacji serwerowej
 jest dobrym wyborem, jeśli nie potrzeba panelu administratora. Jest to jedyne
 omawiane do tej pory narzędzie, które nie ogranicza w większym stopniu
 możliwości operowania na bazie danych.
-
-\subsection{Podsumowanie}
-
-Podsumowując, można zauważyć, że na rynku nie ma popularnego narzędzia
-spełniającego założenia pracy. Istnieje wiele narzędzi, które można dostosować
-do założeń pracy, ale takie zastosowanie nie jest zamierzone przez twórców, lub
-wymaga pisania kodu poza zapytaniami SQL.

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.1.17)  17 JAN 2022 17:11
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.1.23)  23 JAN 2022 17:18
  restricted system commands enabled.
 **praca_dyplomowa.tex
 (./praca_dyplomowa.tex
@@ -499,18 +499,6 @@ r/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 luaotfload | aux : font no 26 (nil) defines no feature for script latn
 luaotfload | aux : font no 26 (nil) defines no feature for script dflt
 
-Package fontspec Info: Could not resolve font "TimesNewRoman/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "TimesNewRoman/B" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "TimesNewRoman/I" (it probably
-(fontspec)             doesn't exist).
-
-
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             New Roman' with options [Ligatures=TeX].
 (fontspec)              
@@ -520,6 +508,15 @@ Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"TimesNewRoman:mode=node;language=dflt;+tlig;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"TimesNewRoman/B:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"TimesNewRoman/I:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"TimesNewRoman/BI:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
 Package fontspec Info: FiraCode scale = 0.8282682716624988.
@@ -535,12 +532,12 @@ Package fontspec Info: Could not resolve font "FiraCode/I" (it probably
 
 Package fontspec Info: FiraCode scale = 0.8282682716624988.
 
-luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: FiraCode/B scale = 0.82124845903844.
 
-luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
+luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 
 Package fontspec Info: Font family 'FiraCode(0)' created for font 'Fira Code'
@@ -570,8 +567,8 @@ Space,Scale=MatchLowercase].
 (fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
-luaotfload | aux : font no 36 (nil) defines no feature for script latn
-luaotfload | aux : font no 36 (nil) defines no feature for script dflt
+luaotfload | aux : font no 42 (nil) defines no feature for script latn
+luaotfload | aux : font no 42 (nil) defines no feature for script dflt
 
 Package fontspec Info: Could not resolve font "ArialNarrowBold/BI" (it
 (fontspec)             probably doesn't exist).
@@ -595,10 +592,18 @@ Package fontspec Info: Font family 'ArialNarrowBold(0)' created for font
 (fontspec)             <->"ArialNarrowBold:mode=node;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-luaotfload | aux : font no 39 (nil) defines no feature for script latn
-luaotfload | aux : font no 39 (nil) defines no feature for script dflt
+luaotfload | aux : font no 45 (nil) defines no feature for script latn
+luaotfload | aux : font no 45 (nil) defines no feature for script dflt
+
+Package fontspec Info: Could not resolve font "ArialNarrow/BI" (it probably
+(fontspec)             doesn't exist).
+
 
 Package fontspec Info: Could not resolve font "ArialNarrow/B" (it probably
+(fontspec)             doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "ArialNarrow/I" (it probably
 (fontspec)             doesn't exist).
 
 
@@ -611,12 +616,6 @@ Package fontspec Info: Font family 'ArialNarrow(0)' created for font 'Arial
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"ArialNarrow:mode=node;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"ArialNarrow/I:mode=node;language=dflt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
-(fontspec)             <->"ArialNarrow/BI:mode=node;language=dflt;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
 (./praca_dyplomowa.aux)
@@ -800,30 +799,108 @@ Package caption Info: End \AtBeginDocument code.
 LaTeX Font Warning: Font shape `TU/ArialNarrowBold(0)/b/n' undefined
 (Font)              using `TU/ArialNarrowBold(0)/m/n' instead on input line 3.
 
-[1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-warning  (file /usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map) 
-(map file): entry for 'pcrr8rn' already exists, duplicates ignored
-}]
+[1{/usr/share/texlive/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(0.0pt, 743.6402pt, 101.40665pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=743.6402pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-109.26999pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<./img/oryginal.jpg, id=95, 616.10779pt x 847.42014pt>
+File: ./img/oryginal.jpg Graphic file (type jpg)
+<use ./img/oryginal.jpg>
+Package luatex.def Info: ./img/oryginal.jpg  used on input line 42.
+(luatex.def)             Requested size: 616.10628pt x 847.41808pt.
+
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [2
 
 
-]
 
-LaTeX Font Warning: Font shape `TU/TimesNewRoman(0)/b/n' undefined
-(Font)              using `TU/TimesNewRoman(0)/m/n' instead on input line 42.
+]
+Overfull \vbox (103.77788pt too high) has occurred while \output is active []
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[3]
+[3<./img/oryginal.jpg>]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(0.0pt, 743.6402pt, 101.40665pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=743.6402pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-109.26999pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<./img/oswiadczenie.jpg, id=103, 616.10779pt x 847.42014pt>
+File: ./img/oswiadczenie.jpg Graphic file (type jpg)
+<use ./img/oswiadczenie.jpg>
+Package luatex.def Info: ./img/oswiadczenie.jpg  used on input line 49.
+(luatex.def)             Requested size: 616.10628pt x 847.41808pt.
+
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [4
 
+
+
 ]
+Overfull \vbox (103.77788pt too high) has occurred while \output is active []
+
+
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
-[5]
+[5<./img/oswiadczenie.jpg>]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [6
+
 
 ]) (./sections/titles.tex
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
@@ -842,43 +919,62 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 
 \openout4 = praca_dyplomowa.toc
- [1])
-(./sections/introduction.tex) [2
+ [1] [2
 
-] [3] (./sections/aim_and_scope.tex [4
-
-]
-Overfull \hbox (13.46422pt too wide) in paragraph at lines 56--62
-\TU/TimesNewRoman(0)/b/n/12 nych te-sto-wych. Ad-mi-ni-stra-tor może ogra-ni-cz
-ać moż-li-wość wy-wo-ła-nia punktu
- []
-
-
-Overfull \hbox (3.49481pt too wide) in paragraph at lines 90--93
-[]\TU/TimesNewRoman(0)/b/n/12 Im-ple-men-tuje sys-tem użyt-kow-ni-ków z wy-ko-
-rzy-sta-niem tech-no-lo-gii json web
- []
-
-) [5] (./sections/comparison.tex
-<./img/wordpress_new_post.png, id=195, 959.83594pt x 659.46375pt>
+])
+(./sections/introduction.tex) [3] [4] (./sections/comparison.tex
+<./img/wordpress_new_post.png, id=170, 959.83594pt x 659.46375pt>
 File: ./img/wordpress_new_post.png Graphic file (type png)
 <use ./img/wordpress_new_post.png>
-Package luatex.def Info: ./img/wordpress_new_post.png  used on input line 24.
+Package luatex.def Info: ./img/wordpress_new_post.png  used on input line 18.
 (luatex.def)             Requested size: 416.83289pt x 286.39146pt.
- [6
+ [5
 
 <./img/wordpress_new_post.png>]
-Overfull \hbox (3.69998pt too wide) in paragraph at lines 58--62
-[]\TU/TimesNewRoman(0)/b/n/12 Sys-tem Word-press do-myśl-nie znacz-nie ogra-ni-
+<./img/gutenberg.png, id=179, 1009.7725pt x 558.085pt>
+File: ./img/gutenberg.png Graphic file (type png)
+<use ./img/gutenberg.png>
+Package luatex.def Info: ./img/gutenberg.png  used on input line 40.
+(luatex.def)             Requested size: 416.83289pt x 230.3747pt.
+
+Overfull \hbox (0.21153pt too wide) in paragraph at lines 47--50
+[]\TU/TimesNewRoman(0)/m/n/12 Word-press to opro-gra-mo-wa-nie, które do-brze 
+speł-nia po-trzeby au-tora bloga. Znaczną
+ []
+
+
+Overfull \hbox (3.69998pt too wide) in paragraph at lines 68--72
+[]\TU/TimesNewRoman(0)/m/n/12 Sys-tem Word-press do-myśl-nie znacz-nie ogra-ni-
 cza moż-li-wo-ści ad-mi-ni-stra-tora. W celu
  []
 
-[7]
+[6<./img/gutenberg.png>]
+<./img/strapi_new_entry.png, id=190, 1741.50626pt x 932.48375pt>
+File: ./img/strapi_new_entry.png Graphic file (type png)
+<use ./img/strapi_new_entry.png>
+Package luatex.def Info: ./img/strapi_new_entry.png  used on input line 94.
+(luatex.def)             Requested size: 416.83289pt x 223.18884pt.
+<./img/strapi_relations_editor.png, id=192, 803.0pt x 401.5pt>
+File: ./img/strapi_relations_editor.png Graphic file (type png)
+<use ./img/strapi_relations_editor.png>
+Package luatex.def Info: ./img/strapi_relations_editor.png  used on input line 
+106.
+(luatex.def)             Requested size: 416.83289pt x 208.41974pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7<./img/strapi_new_entry.png>] [8<./img/strapi_relations_editor.png>]
 LaTeX Font Info:    Font shape `TU/FiraCode(0)/m/n' will be
-(Font)              scaled to size 9.93915pt on input line 119.
- [8]) [9] (./sections/system_design.tex
+(Font)              scaled to size 9.93915pt on input line 155.
+)
+[9] (./sections/design_assumptions.tex [10
+
+]) [11]
+(./sections/key_functionality_implementation.tex
+(./sections/subsections_key_functionality/main_interface.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 35.
+nput line 38.
  (./code/editors.ts)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -887,52 +983,58 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10
-
-]) [11] [12] (./sections/key_functionality_implementation.tex
-(./sections/subsections_key_functionality/main_interface.tex
-<./img/starting_view_light.png, id=307, 768.8725pt x 527.9725pt>
+<./img/starting_view_light.png, id=264, 768.8725pt x 527.9725pt>
 File: ./img/starting_view_light.png Graphic file (type png)
 <use ./img/starting_view_light.png>
-Package luatex.def Info: ./img/starting_view_light.png  used on input line 11.
+Package luatex.def Info: ./img/starting_view_light.png  used on input line 59.
 (luatex.def)             Requested size: 187.57352pt x 128.80254pt.
-<./img/starting_view_dark.png, id=308, 768.8725pt x 527.9725pt>
+<./img/starting_view_dark.png, id=265, 768.8725pt x 527.9725pt>
 File: ./img/starting_view_dark.png Graphic file (type png)
 <use ./img/starting_view_dark.png>
-Package luatex.def Info: ./img/starting_view_dark.png  used on input line 14.
+Package luatex.def Info: ./img/starting_view_dark.png  used on input line 62.
 (luatex.def)             Requested size: 187.57352pt x 128.80254pt.
-)
-(./sections/subsections_key_functionality/generic_cms_functions.tex
-<./img/table_creation.png, id=310, 908.39375pt x 815.045pt>
+) [12
+
+] [13<./img/starting_view_light.png><./img/starting_view_dark.png>]
+[14] (./sections/subsections_key_functionality/generic_cms_functions.tex
+<./img/table_creation.png, id=350, 908.39375pt x 815.045pt>
 File: ./img/table_creation.png Graphic file (type png)
 <use ./img/table_creation.png>
 Package luatex.def Info: ./img/table_creation.png  used on input line 36.
 (luatex.def)             Requested size: 333.46758pt x 299.19897pt.
- [13
 
-<./img/starting_view_light.png><./img/starting_view_dark.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (12.35431pt too wide) in paragraph at lines 48--56
-\TU/TimesNewRoman(0)/b/n/12 dowo, ko-lumny typu []\TU/FiraCode(0)/m/n/12 varchar
- \TU/TimesNewRoman(0)/b/n/12 spo-wo-dują wy-świe-tle-nie ele-mentu []\TU/Fira
-Code(0)/m/n/12 <input type="text">\TU/TimesNewRoman(0)/b/n/12 ,
+\TU/TimesNewRoman(0)/m/n/12 dowo, ko-lumny typu []\TU/FiraCode(0)/m/n/12 varchar
+ \TU/TimesNewRoman(0)/m/n/12 spo-wo-dują wy-świe-tle-nie ele-mentu []\TU/Fira
+Code(0)/m/n/12 <input type="text">\TU/TimesNewRoman(0)/m/n/12 ,
  []
 
-[14<./img/table_creation.png>]
-<./img/table_data_management.png, id=330, 1015.795pt x 712.6625pt>
+[15
+
+]
+<./img/table_data_management.png, id=358, 1015.795pt x 712.6625pt>
 File: ./img/table_data_management.png Graphic file (type png)
 <use ./img/table_data_management.png>
 Package luatex.def Info: ./img/table_data_management.png  used on input line 71
 .
 (luatex.def)             Requested size: 416.83289pt x 292.44362pt.
-)
-(./sections/subsections_key_functionality/sql_editor.tex [15<./img/table_data_ma
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [16<./img/table_creation.png>]
+(./sections/subsections_key_functionality/sql_editor.tex [17<./img/table_data_ma
 nagement.png>]
 Overfull \hbox (0.92638pt too wide) in paragraph at lines 5--8
-\TU/TimesNewRoman(0)/b/n/12 men-tów pro-gramu. Po-zwala ad-mi-ni-stra-to-rowi 
+\TU/TimesNewRoman(0)/m/n/12 men-tów pro-gramu. Po-zwala ad-mi-ni-stra-to-rowi 
 na wy-godne edy-to-wa-nie, te-sto-wa-nie i wy-
  []
 
-<./img/sql_editor.png, id=341, 706.64pt x 881.2925pt>
+<./img/sql_editor.png, id=374, 706.64pt x 881.2925pt>
 File: ./img/sql_editor.png Graphic file (type png)
 <use ./img/sql_editor.png>
 Package luatex.def Info: ./img/sql_editor.png  used on input line 43.
@@ -940,27 +1042,27 @@ Package luatex.def Info: ./img/sql_editor.png  used on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/test_query_before.png, id=342, 587.19376pt x 881.2925pt>
+<./img/test_query_before.png, id=375, 587.19376pt x 881.2925pt>
 File: ./img/test_query_before.png Graphic file (type png)
 <use ./img/test_query_before.png>
 Package luatex.def Info: ./img/test_query_before.png  used on input line 51.
 (luatex.def)             Requested size: 170.71652pt x 256.21375pt.
-<./img/test_query_after.png, id=343, 587.19376pt x 881.2925pt>
+<./img/test_query_after.png, id=376, 587.19376pt x 881.2925pt>
 File: ./img/test_query_after.png Graphic file (type png)
 <use ./img/test_query_after.png>
 Package luatex.def Info: ./img/test_query_after.png  used on input line 54.
 (luatex.def)             Requested size: 170.71652pt x 256.21375pt.
-<./img/diagram_diff_before.png, id=344, 836.12375pt x 948.54375pt>
+<./img/diagram_diff_before.png, id=377, 836.12375pt x 948.54375pt>
 File: ./img/diagram_diff_before.png Graphic file (type png)
 <use ./img/diagram_diff_before.png>
 Package luatex.def Info: ./img/diagram_diff_before.png  used on input line 63.
 (luatex.def)             Requested size: 195.91196pt x 222.24202pt.
-<./img/diagram_diff_after.png, id=345, 645.41125pt x 695.59875pt>
+<./img/diagram_diff_after.png, id=378, 645.41125pt x 695.59875pt>
 File: ./img/diagram_diff_after.png Graphic file (type png)
 <use ./img/diagram_diff_after.png>
 Package luatex.def Info: ./img/diagram_diff_after.png  used on input line 66.
 (luatex.def)             Requested size: 195.91196pt x 211.14368pt.
-<./img/diagram_diff_after_fullscreen.png, id=346, 645.41125pt x 695.59875pt>
+<./img/diagram_diff_after_fullscreen.png, id=379, 645.41125pt x 695.59875pt>
 File: ./img/diagram_diff_after_fullscreen.png Graphic file (type png)
 <use ./img/diagram_diff_after_fullscreen.png>
 Package luatex.def Info: ./img/diagram_diff_after_fullscreen.png  used on input
@@ -969,12 +1071,12 @@ Package luatex.def Info: ./img/diagram_diff_after_fullscreen.png  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [16
+) [18
 
-] [17<./img/sql_editor.png><./img/test_query_before.png><./img/test_query_after.
-png>] [18<./img/diagram_diff_before.png><./img/diagram_diff_after.png>]
-[19<./img/diagram_diff_after_fullscreen.png>]
-(./sections/subsections_key_functionality/endpoint_editor.tex [20
+] [19<./img/sql_editor.png><./img/test_query_before.png><./img/test_query_after.
+png>] [20<./img/diagram_diff_before.png><./img/diagram_diff_after.png>]
+[21<./img/diagram_diff_after_fullscreen.png>]
+(./sections/subsections_key_functionality/endpoint_editor.tex [22
 
 ]
 (./code/parsingTest.rs)
@@ -982,29 +1084,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
-[21]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-<./img/endpoint_creation.png, id=415, 915.42pt x 885.3075pt>
+<./img/endpoint_creation.png, id=449, 915.42pt x 885.3075pt>
 File: ./img/endpoint_creation.png Graphic file (type png)
 <use ./img/endpoint_creation.png>
 Package luatex.def Info: ./img/endpoint_creation.png  used on input line 113.
 (luatex.def)             Requested size: 333.46758pt x 322.49289pt.
 
 Overfull \hbox (3.69902pt too wide) in paragraph at lines 118--122
-\TU/TimesNewRoman(0)/b/n/12 koń-co-wego znaj-duje się edy-tor da-nych te-sto-w
+\TU/TimesNewRoman(0)/m/n/12 koń-co-wego znaj-duje się edy-tor da-nych te-sto-w
 ych. Umoż-li-wia on two-rze-nie mapy zmien-
  []
 
 
 Overfull \hbox (7.72339pt too wide) in paragraph at lines 118--122
-\TU/TimesNewRoman(0)/b/n/12 nych, które będą trak-to-wane, jak war-to-ści fo
+\TU/TimesNewRoman(0)/m/n/12 nych, które będą trak-to-wane, jak war-to-ści fo
 r-mu-la-rza przy-cho-dzą-cego w za-py-ta-niu HTTP. 
  []
 
-<./img/endpoint_testing.png, id=417, 966.61125pt x 979.66pt>
+<./img/endpoint_testing.png, id=451, 966.61125pt x 979.66pt>
 File: ./img/endpoint_testing.png Graphic file (type png)
 <use ./img/endpoint_testing.png>
 Package luatex.def Info: ./img/endpoint_testing.png  used on input line 130.
@@ -1014,11 +1116,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Overfull \hbox (81.60925pt too wide) in paragraph at lines 135--138
-[]\TU/TimesNewRoman(0)/b/n/12 Za-pi-sane punkty koń-cowe będą do-stępne pod ad-re-sem []\TU/FiraCode(0)/m/n/12 /endpoint/<
-ścieżka punktu końcowego>\TU/TimesNewRoman(0)/b/n/12 .
+[]\TU/TimesNewRoman(0)/m/n/12 Za-pi-sane punkty koń-cowe będą do-stępne pod ad-re-sem []\TU/FiraCode(0)/m/n/12 /endpoint/<
+ścieżka punktu końcowego>\TU/TimesNewRoman(0)/m/n/12 .
  []
 
-<./img/endpoint_firefox.png, id=419, 854.19125pt x 630.355pt>
+<./img/endpoint_firefox.png, id=453, 854.19125pt x 630.355pt>
 File: ./img/endpoint_firefox.png Graphic file (type png)
 <use ./img/endpoint_firefox.png>
 Package luatex.def Info: ./img/endpoint_firefox.png  used on input line 141.
@@ -1026,7 +1128,7 @@ Package luatex.def Info: ./img/endpoint_firefox.png  used on input line 141.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [22<./img/endpoint_creation.png>] [23<./img/endpoint_testing.png><./img/endpoi
+) [24<./img/endpoint_creation.png>] [25<./img/endpoint_testing.png><./img/endpoi
 nt_firefox.png>] (./sections/subsections_key_functionality/sql_execution.tex
 (./code/executionMap.rs)
 LaTeX Font Info:    Font shape `TU/FiraCode(0)/m/n' will be
@@ -1035,7 +1137,7 @@ LaTeX Font Info:    Font shape `TU/FiraCode(0)/m/n' will be
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./img/variable_resolution.png, id=439, 258.0039pt x 192.4791pt>
+<./img/variable_resolution.png, id=472, 258.0039pt x 192.4791pt>
 File: ./img/variable_resolution.png Graphic file (type png)
 <use ./img/variable_resolution.png>
 Package luatex.def Info: ./img/variable_resolution.png  used on input line 70.
@@ -1043,140 +1145,401 @@ Package luatex.def Info: ./img/variable_resolution.png  used on input line 70.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24
+[26
 
-] [25] [26<./img/variable_resolution.png>] (./code/endpointExecution.rs
-[27
+] [27] [28<./img/variable_resolution.png>] (./code/endpointExecution.rs
+[29
 
-])) (./sections/subsections_key_functionality/user_management.tex)) [28]
+])) (./sections/subsections_key_functionality/user_management.tex
+Overfull \hbox (4.38066pt too wide) in paragraph at lines 6--13
+[]\TU/TimesNewRoman(0)/m/n/12 Two-rze-nie kont po-winno być wy-ko-ny-wane przez
+ ad-mi-ni-stra-tora. Użyt-kow-nicy mogą
+ []
+
+<./img/creating_users.png, id=600, 708.6475pt x 703.62875pt>
+File: ./img/creating_users.png Graphic file (type png)
+<use ./img/creating_users.png>
+Package luatex.def Info: ./img/creating_users.png  used on input line 16.
+(luatex.def)             Requested size: 291.78174pt x 289.71361pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30]
+<./img/user_management.png, id=639, 545.03625pt x 539.01375pt>
+File: ./img/user_management.png Graphic file (type png)
+<use ./img/user_management.png>
+Package luatex.def Info: ./img/user_management.png  used on input line 39.
+(luatex.def)             Requested size: 250.10226pt x 247.33247pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [31<./img/creating_users.png>]) [32<./img/user_management.png>]
 (./sections/tests.tex
 LaTeX Font Info:    Font shape `TU/FiraCode(0)/m/n' will be
 (Font)              scaled to size 9.06946pt on input line 17.
  (./code/cargoTest.txt)
 Overfull \hbox (3.57361pt too wide) in paragraph at lines 32--35
 [][]\TU/FiraCode(0)/m/n/12 sql_variable_parser󰃫󰂬tests󰃫󰂬parsing_multi
-ple \TU/TimesNewRoman(0)/b/n/12 - test spraw-dza po-prawne
+ple \TU/TimesNewRoman(0)/m/n/12 - test spraw-dza po-prawne
  []
 
-[29
+[33
 
 ]
 Overfull \hbox (2.83722pt too wide) in paragraph at lines 41--44
 [][]\TU/FiraCode(0)/m/n/12 sql_variable_parser󰃫󰂬tests󰃫󰂬parsing_endpo
-int_info \TU/TimesNewRoman(0)/b/n/12 - test spraw-dza po-
+int_info \TU/TimesNewRoman(0)/m/n/12 - test spraw-dza po-
  []
 
 
 Overfull \hbox (4.2201pt too wide) in paragraph at lines 45--48
 [][]\TU/FiraCode(0)/m/n/12 sql_variable_parser󰃫󰂬tests󰃫󰂬not_closed_pa
-nics \TU/TimesNewRoman(0)/b/n/12 - test spraw-dza, czy pro-
+nics \TU/TimesNewRoman(0)/m/n/12 - test spraw-dza, czy pro-
  []
 
 
 Overfull \hbox (15.8064pt too wide) in paragraph at lines 60--67
 [][]\TU/FiraCode(0)/m/n/12 endpoint_execution󰃫󰂬test󰃫󰂬super_variables
-_work \TU/TimesNewRoman(0)/b/n/12 - test spraw-dza po-prawne
+_work \TU/TimesNewRoman(0)/m/n/12 - test spraw-dza po-prawne
  []
 
 
 Overfull \hbox (10.9273pt too wide) in paragraph at lines 72--75
 [][]\TU/FiraCode(0)/m/n/12 endpoint_execution󰃫󰂬test󰃫󰂬error_when_cant
-_f󰁩nd_super_variable \TU/TimesNewRoman(0)/b/n/12 - test
+_f󰁩nd_super_variable \TU/TimesNewRoman(0)/m/n/12 - test
  []
 
 
 Overfull \hbox (3.1903pt too wide) in paragraph at lines 76--83
 [][]\TU/FiraCode(0)/m/n/12 endpoint_execution󰃫󰂬test󰃫󰂬error_when_too_
-many_supers \TU/TimesNewRoman(0)/b/n/12 - test spraw-dza
+many_supers \TU/TimesNewRoman(0)/m/n/12 - test spraw-dza
  []
 
-[30]
+[34] (./code/newmanIntegration.txt [35] [36]) [37] [38]
+<./img/cards/creating_cards/1_pre.png, id=829, 902.37125pt x 369.38pt>
+File: ./img/cards/creating_cards/1_pre.png Graphic file (type png)
+<use ./img/cards/creating_cards/1_pre.png>
+Package luatex.def Info: ./img/cards/creating_cards/1_pre.png  used on input li
+ne 232.
+(luatex.def)             Requested size: 333.46758pt x 136.505pt.
+<./img/cards/creating_cards/2_post.png, id=830, 902.37125pt x 369.38pt>
+File: ./img/cards/creating_cards/2_post.png Graphic file (type png)
+<use ./img/cards/creating_cards/2_post.png>
+Package luatex.def Info: ./img/cards/creating_cards/2_post.png  used on input l
+ine 235.
+(luatex.def)             Requested size: 333.46758pt x 136.505pt.
+<./img/cards/creating_cards/3_pre.png, id=831, 902.37125pt x 369.38pt>
+File: ./img/cards/creating_cards/3_pre.png Graphic file (type png)
+<use ./img/cards/creating_cards/3_pre.png>
+Package luatex.def Info: ./img/cards/creating_cards/3_pre.png  used on input li
+ne 239.
+(luatex.def)             Requested size: 333.46758pt x 136.505pt.
+<./img/cards/creating_cards/4_post.png, id=832, 902.37125pt x 369.38pt>
+File: ./img/cards/creating_cards/4_post.png Graphic file (type png)
+<use ./img/cards/creating_cards/4_post.png>
+Package luatex.def Info: ./img/cards/creating_cards/4_post.png  used on input l
+ine 242.
+(luatex.def)             Requested size: 333.46758pt x 136.505pt.
 
-LaTeX Warning: Reference `postmanTestExec' on page 31 undefined on input line 9
-3.
 
-[31] [32]
-Overfull \hbox (5.19452pt too wide) in paragraph at lines 252--254
-[]\TU/TimesNewRoman(0)/b/n/12 Otwo-rze-nie w do-wol-nej kar-cie kom-po-nentu za-
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39] [40<./img/cards/creating_cards/1_pre.png><./img/cards/creating_cards/2_post
+.png><./img/cards/creating_cards/3_pre.png><./img/cards/creating_cards/4_post.pn
+g>]
+<./img/cards/closing_cards/1_pre.png, id=861, 902.37125pt x 282.05376pt>
+File: ./img/cards/closing_cards/1_pre.png Graphic file (type png)
+<use ./img/cards/closing_cards/1_pre.png>
+Package luatex.def Info: ./img/cards/closing_cards/1_pre.png  used on input lin
+e 279.
+(luatex.def)             Requested size: 333.46758pt x 104.23343pt.
+<./img/cards/closing_cards/2_post.png, id=862, 902.37125pt x 282.05376pt>
+File: ./img/cards/closing_cards/2_post.png Graphic file (type png)
+<use ./img/cards/closing_cards/2_post.png>
+Package luatex.def Info: ./img/cards/closing_cards/2_post.png  used on input li
+ne 282.
+(luatex.def)             Requested size: 333.46758pt x 104.23343pt.
+<./img/cards/closing_cards/3_pre.png, id=863, 902.37125pt x 282.05376pt>
+File: ./img/cards/closing_cards/3_pre.png Graphic file (type png)
+<use ./img/cards/closing_cards/3_pre.png>
+Package luatex.def Info: ./img/cards/closing_cards/3_pre.png  used on input lin
+e 285.
+(luatex.def)             Requested size: 333.46758pt x 104.23343pt.
+<./img/cards/closing_cards/4_post.png, id=864, 902.37125pt x 282.05376pt>
+File: ./img/cards/closing_cards/4_post.png Graphic file (type png)
+<use ./img/cards/closing_cards/4_post.png>
+Package luatex.def Info: ./img/cards/closing_cards/4_post.png  used on input li
+ne 288.
+(luatex.def)             Requested size: 333.46758pt x 104.23343pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41
+
+] [42<./img/cards/closing_cards/1_pre.png><./img/cards/closing_cards/2_post.png>
+<./img/cards/closing_cards/3_pre.png><./img/cards/closing_cards/4_post.png>]
+Overfull \hbox (5.19452pt too wide) in paragraph at lines 302--304
+[]\TU/TimesNewRoman(0)/m/n/12 Otwo-rze-nie w do-wol-nej kar-cie kom-po-nentu za-
 wie-ra-ją-cego stan (na przy-
  []
 
-[33]
-Overfull \hbox (1.89764pt too wide) in paragraph at lines 284--286
-[]\TU/TimesNewRoman(0)/b/n/12 Wci-śnię-cie przy-ci-sku ``New block'' pod ostat
+<./img/state_retention/1.png, id=886, 902.37125pt x 347.2975pt>
+File: ./img/state_retention/1.png Graphic file (type png)
+<use ./img/state_retention/1.png>
+Package luatex.def Info: ./img/state_retention/1.png  used on input line 327.
+(luatex.def)             Requested size: 333.46758pt x 128.34438pt.
+<./img/state_retention/2.png, id=887, 902.37125pt x 347.2975pt>
+File: ./img/state_retention/2.png Graphic file (type png)
+<use ./img/state_retention/2.png>
+Package luatex.def Info: ./img/state_retention/2.png  used on input line 330.
+(luatex.def)             Requested size: 333.46758pt x 128.34438pt.
+<./img/state_retention/3.png, id=888, 902.37125pt x 347.2975pt>
+File: ./img/state_retention/3.png Graphic file (type png)
+<use ./img/state_retention/3.png>
+Package luatex.def Info: ./img/state_retention/3.png  used on input line 333.
+(luatex.def)             Requested size: 333.46758pt x 128.34438pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43
+
+]
+Overfull \hbox (1.89764pt too wide) in paragraph at lines 354--356
+[]\TU/TimesNewRoman(0)/m/n/12 Wci-śnię-cie przy-ci-sku ``New block'' pod ostat
 -nim po-lem tek-sto-wym z za-
  []
 
-[34]
-Overfull \hbox (6.49835pt too wide) in paragraph at lines 379--383
-[]\TU/TimesNewRoman(0)/b/n/12 Je-śli za-py-ta-nie, któ-rego przy-cisk wci-śni
+<./img/sql_editor/new_block/1.png, id=902, 485.815pt x 586.19pt>
+File: ./img/sql_editor/new_block/1.png Graphic file (type png)
+<use ./img/sql_editor/new_block/1.png>
+Package luatex.def Info: ./img/sql_editor/new_block/1.png  used on input line 3
+70.
+(luatex.def)             Requested size: 187.57352pt x 226.32338pt.
+<./img/sql_editor/new_block/2.png, id=903, 485.815pt x 586.19pt>
+File: ./img/sql_editor/new_block/2.png Graphic file (type png)
+<use ./img/sql_editor/new_block/2.png>
+Package luatex.def Info: ./img/sql_editor/new_block/2.png  used on input line 3
+73.
+(luatex.def)             Requested size: 187.57352pt x 226.32338pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44<./img/state_retention/1.png><./img/state_retention/2.png><./img/state_retent
+ion/3.png>]
+<./img/sql_editor/deleting_block/1.png, id=920, 485.815pt x 586.19pt>
+File: ./img/sql_editor/deleting_block/1.png Graphic file (type png)
+<use ./img/sql_editor/deleting_block/1.png>
+Package luatex.def Info: ./img/sql_editor/deleting_block/1.png  used on input l
+ine 406.
+(luatex.def)             Requested size: 187.57352pt x 226.32338pt.
+<./img/sql_editor/deleting_block/2.png, id=921, 485.815pt x 586.19pt>
+File: ./img/sql_editor/deleting_block/2.png Graphic file (type png)
+<use ./img/sql_editor/deleting_block/2.png>
+Package luatex.def Info: ./img/sql_editor/deleting_block/2.png  used on input l
+ine 409.
+(luatex.def)             Requested size: 187.57352pt x 226.32338pt.
+<./img/sql_editor/deleting_block/3.png, id=922, 485.815pt x 586.19pt>
+File: ./img/sql_editor/deleting_block/3.png Graphic file (type png)
+<use ./img/sql_editor/deleting_block/3.png>
+Package luatex.def Info: ./img/sql_editor/deleting_block/3.png  used on input l
+ine 412.
+(luatex.def)             Requested size: 187.57352pt x 226.32338pt.
+<./img/sql_editor/deleting_block/4.png, id=923, 485.815pt x 586.19pt>
+File: ./img/sql_editor/deleting_block/4.png Graphic file (type png)
+<use ./img/sql_editor/deleting_block/4.png>
+Package luatex.def Info: ./img/sql_editor/deleting_block/4.png  used on input l
+ine 415.
+(luatex.def)             Requested size: 187.57352pt x 226.32338pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45<./img/sql_editor/new_block/1.png><./img/sql_editor/new_block/2.png>]
+[46<./img/sql_editor/deleting_block/1.png><./img/sql_editor/deleting_block/2.png
+><./img/sql_editor/deleting_block/3.png><./img/sql_editor/deleting_block/4.png>]
+<./img/sql_editor/disabling_block/1.png, id=949, 471.7625pt x 292.09125pt>
+File: ./img/sql_editor/disabling_block/1.png Graphic file (type png)
+<use ./img/sql_editor/disabling_block/1.png>
+Package luatex.def Info: ./img/sql_editor/disabling_block/1.png  used on input 
+line 453.
+(luatex.def)             Requested size: 187.57352pt x 116.13467pt.
+<./img/sql_editor/disabling_block/2.png, id=950, 471.7625pt x 292.09125pt>
+File: ./img/sql_editor/disabling_block/2.png Graphic file (type png)
+<use ./img/sql_editor/disabling_block/2.png>
+Package luatex.def Info: ./img/sql_editor/disabling_block/2.png  used on input 
+line 456.
+(luatex.def)             Requested size: 187.57352pt x 116.13467pt.
+<./img/sql_editor/disabling_block/3.png, id=951, 471.7625pt x 292.09125pt>
+File: ./img/sql_editor/disabling_block/3.png Graphic file (type png)
+<use ./img/sql_editor/disabling_block/3.png>
+Package luatex.def Info: ./img/sql_editor/disabling_block/3.png  used on input 
+line 459.
+(luatex.def)             Requested size: 187.57352pt x 116.13467pt.
+ [47
+
+<./img/sql_editor/disabling_block/1.png><./img/sql_editor/disabling_block/2.png>
+<./img/sql_editor/disabling_block/3.png>]
+<./img/endpoint_editor/creating_new/1.png, id=971, 692.5875pt x 864.22874pt>
+File: ./img/endpoint_editor/creating_new/1.png Graphic file (type png)
+<use ./img/endpoint_editor/creating_new/1.png>
+Package luatex.def Info: ./img/endpoint_editor/creating_new/1.png  used on inpu
+t line 495.
+(luatex.def)             Requested size: 250.10226pt x 312.08476pt.
+<./img/endpoint_editor/creating_new/2.png, id=972, 692.5875pt x 864.22874pt>
+File: ./img/endpoint_editor/creating_new/2.png Graphic file (type png)
+<use ./img/endpoint_editor/creating_new/2.png>
+Package luatex.def Info: ./img/endpoint_editor/creating_new/2.png  used on inpu
+t line 498.
+(luatex.def)             Requested size: 250.10226pt x 312.08476pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[48] [49<./img/endpoint_editor/creating_new/1.png><./img/endpoint_editor/creatin
+g_new/2.png>]
+Overfull \hbox (6.49835pt too wide) in paragraph at lines 525--529
+[]\TU/TimesNewRoman(0)/m/n/12 Je-śli za-py-ta-nie, któ-rego przy-cisk wci-śni
 ęto po-sia-dało przy-cisk ``De-lete'', przy-
  []
 
-[35]) [36] (./sections/ending.tex
-Overfull \hbox (1.55658pt too wide) in paragraph at lines 38--45
-[]\TU/TimesNewRoman(0)/b/n/12 Ko-lejną funk-cją, jaką warto w przy-szło-ści
+<./img/endpoint_editor/creating_sub/1.png, id=988, 625.33624pt x 695.59875pt>
+File: ./img/endpoint_editor/creating_sub/1.png Graphic file (type png)
+<use ./img/endpoint_editor/creating_sub/1.png>
+Package luatex.def Info: ./img/endpoint_editor/creating_sub/1.png  used on inpu
+t line 536.
+(luatex.def)             Requested size: 275.11122pt x 306.03256pt.
+<./img/endpoint_editor/creating_sub/2.png, id=989, 625.33624pt x 695.59875pt>
+File: ./img/endpoint_editor/creating_sub/2.png Graphic file (type png)
+<use ./img/endpoint_editor/creating_sub/2.png>
+Package luatex.def Info: ./img/endpoint_editor/creating_sub/2.png  used on inpu
+t line 539.
+(luatex.def)             Requested size: 275.11122pt x 306.03256pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[50
+
+] [51<./img/endpoint_editor/creating_sub/1.png><./img/endpoint_editor/creating_s
+ub/2.png>]
+<./img/endpoint_editor/deleting/1.png, id=1008, 625.33624pt x 583.17876pt>
+File: ./img/endpoint_editor/deleting/1.png Graphic file (type png)
+<use ./img/endpoint_editor/deleting/1.png>
+Package luatex.def Info: ./img/endpoint_editor/deleting/1.png  used on input li
+ne 577.
+(luatex.def)             Requested size: 216.75487pt x 202.14014pt.
+<./img/endpoint_editor/deleting/2.png, id=1009, 625.33624pt x 583.17876pt>
+File: ./img/endpoint_editor/deleting/2.png Graphic file (type png)
+<use ./img/endpoint_editor/deleting/2.png>
+Package luatex.def Info: ./img/endpoint_editor/deleting/2.png  used on input li
+ne 580.
+(luatex.def)             Requested size: 216.75487pt x 202.14014pt.
+
+Overfull \hbox (25.34323pt too wide) in paragraph at lines 577--581
+ [][][][] 
+ []
+
+<./img/endpoint_editor/deleting/3.png, id=1010, 625.33624pt x 583.17876pt>
+File: ./img/endpoint_editor/deleting/3.png Graphic file (type png)
+<use ./img/endpoint_editor/deleting/3.png>
+Package luatex.def Info: ./img/endpoint_editor/deleting/3.png  used on input li
+ne 583.
+(luatex.def)             Requested size: 216.75487pt x 202.14014pt.
+<./img/endpoint_editor/deleting/4.png, id=1011, 625.33624pt x 583.17876pt>
+File: ./img/endpoint_editor/deleting/4.png Graphic file (type png)
+<use ./img/endpoint_editor/deleting/4.png>
+Package luatex.def Info: ./img/endpoint_editor/deleting/4.png  used on input li
+ne 586.
+(luatex.def)             Requested size: 216.75487pt x 202.14014pt.
+
+Overfull \hbox (25.34323pt too wide) in paragraph at lines 583--587
+ [][][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52
+
+] [53<./img/endpoint_editor/deleting/1.png><./img/endpoint_editor/deleting/2.png
+><./img/endpoint_editor/deleting/3.png><./img/endpoint_editor/deleting/4.png>]
+<./img/endpoint_editor/test_data/1.png, id=1034, 690.58pt x 364.36125pt>
+File: ./img/endpoint_editor/test_data/1.png Graphic file (type png)
+<use ./img/endpoint_editor/test_data/1.png>
+Package luatex.def Info: ./img/endpoint_editor/test_data/1.png  used on input l
+ine 620.
+(luatex.def)             Requested size: 291.78174pt x 153.94803pt.
+<./img/endpoint_editor/test_data/2.png, id=1035, 690.58pt x 364.36125pt>
+File: ./img/endpoint_editor/test_data/2.png Graphic file (type png)
+<use ./img/endpoint_editor/test_data/2.png>
+Package luatex.def Info: ./img/endpoint_editor/test_data/2.png  used on input l
+ine 623.
+(luatex.def)             Requested size: 291.78174pt x 153.94803pt.
+) [54
+
+<./img/endpoint_editor/test_data/1.png><./img/endpoint_editor/test_data/2.png>]
+ (./sections/ending.tex
+Overfull \hbox (1.55658pt too wide) in paragraph at lines 47--54
+[]\TU/TimesNewRoman(0)/m/n/12 Ko-lejną funk-cją, jaką warto w przy-szło-ści
  za-im-ple-men-to-wać jest udo-stęp-nie-nie użyt-
  []
 
-[37
+[55
 
 
-]) [38] (./praca_dyplomowa.bbl
+]) [56] (./praca_dyplomowa.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |\TU/ArialNarrowBold(0)/b/n/14 Li-te-ra-tura|
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
-\TU/TimesNewRoman(0)/b/n/12 cmscritic.com/cloud-[]first-[]headless-[]cms-[]what-
+\TU/TimesNewRoman(0)/m/n/12 cmscritic.com/cloud-[]first-[]headless-[]cms-[]what-
 []it-[]is-[]and-[]why-[]you-[]should-[]use-[]it/$[].
  []
 
-) [39
+) [57
 
 ] (./praca_dyplomowa.lof)
 \tf@lof=\write5
 
 \openout5 = praca_dyplomowa.lof
- [40
+ [58
 
 ] (./praca_dyplomowa.lol)
 \tf@lol=\write6
 
 \openout6 = praca_dyplomowa.lol
- [41
+ [59
 
 ]
 (./praca_dyplomowa.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `praca_dyplomowa.out' has not changed.
-(rerunfilecheck)             Checksum: 2A96510AD09F13894E90B00421D1B221;4100.
+(rerunfilecheck)             Checksum: D34027AD359F04247159D437E526F612;3576.
 )
 
 Here is how much of LuaTeX's memory you used:
- 17352 strings out of 478388
- 305232,794899 words of node,token memory allocated
+ 18019 strings out of 478388
+ 381542,794899 words of node,token memory allocated
  742 words of node memory still in use:
    4 hlist, 1 vlist, 1 rule, 5 glue, 3 kern, 1 glyph, 25 attribute, 86 glue_spec
 , 14 attribute_list, 1 write, 9 pdf_action nodes
-   avail lists: 1:3,2:7298,3:385,4:64,5:7053,6:100,7:13213,8:94,9:14288,10:34,11
-:1101
- 36098 multiletter control sequences out of 65536+600000
- 70 fonts using 9974007 bytes
- 69i,10n,123p,351b,904s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/fonts/fira-code/FiraCode-Regular.ttf></home/gbujak/.local/share/font
-s/times.ttf></usr/share/fonts/arial_narrow/ARIALN.TTF></usr/share/fonts/arial_na
-rrow/ARIALNB.TTF>
-Output written on praca_dyplomowa.pdf (49 pages, 799226 bytes).
+   avail lists: 1:2,2:7408,3:400,4:80,5:8160,6:103,7:14288,8:101,9:16381,10:37,1
+1:1093
+ 36333 multiletter control sequences out of 65536+600000
+ 73 fonts using 11883855 bytes
+ 69i,10n,123p,351b,909s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/fonts/ms-core/TimesBd.ttf></usr/share/fonts/fira-code/FiraCode-Regul
+ar.ttf></usr/share/fonts/ms-core/Times.ttf></usr/share/fonts/ms-arial-narrow/ARI
+ALN.TTF></usr/share/fonts/ms-arial-narrow/ARIALNB.TTF>
+Output written on praca_dyplomowa.pdf (67 pages, 4742911 bytes).
 
-PDF statistics: 798 PDF objects out of 1000 (max. 8388607)
- 698 compressed objects within 7 object streams
- 377 named destinations out of 1000 (max. 131072)
- 201 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1179 PDF objects out of 1200 (max. 8388607)
+ 983 compressed objects within 10 object streams
+ 584 named destinations out of 1000 (max. 131072)
+ 169 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,35 +1,44 @@
 \section{PODSUMOWANIE}
 
-Według aplikacji GNOME System Monitor, 
+Celem pracy było opracowanie i implementacja systemu headless CMS z dodatkową
+możliwością modelowania warstwy danych przy pomocy natywnych zapytań SQL.
+Motywacją pracy była, zaprezentowana w rozdziale 2, tendencja dostępnych na
+rynku systemów CMS do ograniczania możliwości administratora. Możliwość pisania
+natywnych zapytań SQL miała na celu umożliwienie administratorom korzystania ze
+wszystkich funkcji bazy danych.
 
-\verb|python -m http.server| - 8.3MB
+Udało się zrealizować wszystkie założenia systemu. Przygotowany system powala na
+wygodne pisanie, testowanie i wykonywanie zapytań SQL wysyłanych bezpośrednio do
+bazy danych. Dodatkowo, zaimplementowano edytor punktów końcowych pozwalający na
+wykonywanie dowolnej ilości zapytań SQL przy przychodzącym zapytaniu HTTP i
+modelowaniu struktury dokumentu JSON odsyłanego w odpowiedzi. Drzewo zapytań SQL
+można łatwo testować przed publikacją punktu końcowego. Możliwość wykonywania
+punktów końcowych można ograniczyć do wybranych grup użytkowników, których
+kontami wygodnie zarządza się w przygotowanych komponentach panelu
+administratora. Dodatkowo, zaimplementowano podstawowe funkcje typowego systemu
+CMS umożliwiające tworzenie tabel i zarządzanie danymi bez potrzeby pisania kodu
+SQL.
 
-1.9MB
+%Według aplikacji GNOME System Monitor, aplikacja backend w stanie spoczynku
+%używa 1.9MB pamięci RAM.
+
+Poprawne działanie aplikacji zostało zweryfikowane za pomocą testów
+jednostkowych, integracyjnych i manualnych. Tym samym można uznać, że cel pracy
+został osiągnięty.
 
 \medspace
 
-Przygotowane w rozdziale \ref{testSection} testy potwierdzają, że przygotowany
-system spełnia założenia projektowe.
-
-Udało się przygotować system, który pozwala na wykonywanie dowolnych działań na
-bazie danych za pomocą natywnych zapytań SQL. Program udostępnia administratorom
-funkcje niedostępne w innych systemach CMS i headless CMS dostępnych na rynku.
-
-\medspace
-
-Aplikacja posiada większość funkcji typowego systemu CMS, jak tworzenie nowego
-typu danych i zarządzanie danymi za pomocą formularzy, a nie przez pisanie SQL.
-Brakuje jednak możliwości zmiany struktury tabel za pomocą formularza.
-Niewygodne jest również dodawanie kluczy obcych, które wymaga pamiętania nazwy
-tabeli, do której chce się odnieść oraz nazwy kolumny przechowującej klucze
-główne.
+Aplikację można rozwinąć implementując możliwość zmiany struktury tabel za
+pomocą formularza. Niewygodne jest również dodawanie kluczy obcych, które wymaga
+pamiętania nazwy tabeli, do której chce się odnieść oraz nazwy kolumny
+przechowującej klucze główne.
 
 Funkcją dostępną w typowych systemach CMS, której zupełnie brakuje w programie
 jest zarządzanie mediami. Należałoby się zastanowić, jak połączyć system,
 którego głównym sposobem zarządzania jest pisanie natywnych zapytań SQL z
 systemem zarządzania mediami.
 
-Można by użyć do tego celu jednego z typów danych bazy Postgres przeznaczonego do
+Można użyć do tego celu jednego z typów danych bazy Postgres przeznaczonego do
 przechowywania danych binarnych. Popularnym rozwiązaniem jest przechowywanie
 danych binarnych w systemie plików i przechowywanie nazwy pliku w bazie danych.
 Takie rozwiązanie utrudniłoby jednak administratorom zarządzanie danymi. W celu

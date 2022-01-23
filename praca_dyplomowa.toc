@@ -1,26 +1,22 @@
 \babel@toc {polish}{}
-\contentsline {section}{\numberline {1}WSTĘP}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Przybliżenie domeny pracy}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}CEL I ZAKRES PRACY}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Cel pracy}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Zakres funkcji systemu}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}PRZEGLĄD ISTNIEJĄCYCH ROZWIĄZAŃ}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Wordpress}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Strapi}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}PostgREST}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Podsumowanie}{9}{subsection.3.4}%
-\contentsline {section}{\numberline {4}PROJEKT SYSTEMU}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Projekt aplikacji frontend}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Projekt aplikacji backend}{10}{subsection.4.2}%
-\contentsline {section}{\numberline {5}IMPLEMENTACJA KLUCZOWYCH FUNKCJI}{13}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Główna struktura interfejsu}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Tworzenie nowych typów danych}{13}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Zarządzanie danymi}{14}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Edytor zapytań SQL wykonywanych natychmiast}{16}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Edytor punktów końcowych}{20}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Wykonywanie SQL przy wywołaniu punktu końcowego}{24}{subsection.5.6}%
-\contentsline {section}{\numberline {6}WERYFIKACJA PRACY PROGRAMU}{29}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Testy jednostkowe}{29}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Testy integracyjne}{31}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Testy manualne}{33}{subsection.6.3}%
-\contentsline {section}{\numberline {7}PODSUMOWANIE}{37}{section.7}%
+\contentsline {section}{\numberline {1}WSTĘP}{3}{section.1}%
+\contentsline {section}{\numberline {2}PRZEGLĄD ISTNIEJĄCYCH ROZWIĄZAŃ}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Wordpress}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Strapi}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}PostgREST}{9}{subsection.2.3}%
+\contentsline {section}{\numberline {3}ZAŁOŻENIA PROJEKTOWE TWORZONEGO SYSTEMU}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Założenia funkcjonalne}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Założenia niefunkcjonalne}{11}{subsection.3.2}%
+\contentsline {section}{\numberline {4}IMPLEMENTACJA}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Główna struktura interfejsu}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Tworzenie nowych typów danych}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Zarządzanie danymi}{15}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Edytor zapytań SQL wykonywanych natychmiast}{18}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Edytor punktów końcowych}{22}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Wykonywanie SQL przy wywołaniu punktu końcowego}{26}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Zarządzanie użytkownikami}{30}{subsection.4.7}%
+\contentsline {section}{\numberline {5}WERYFIKACJA PRACY PROGRAMU}{33}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Testy jednostkowe}{33}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Testy integracyjne}{35}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Testy manualne}{39}{subsection.5.3}%
+\contentsline {section}{\numberline {6}PODSUMOWANIE}{55}{section.6}%

@@ -48,7 +48,7 @@ Działanie testów jednostkowych można opisać następująco:
 
     \item \verb|endpoint_execution::test::it_works| - test sprawdza podstawowe
         działanie modułu wykonującego drzewo zapytań SQL. Do implementacji
-        podawane jest drzewo zkładające się z jednego liścia. Sprawdzane jest,
+        podawane jest drzewo składające się z jednego liścia. Sprawdzane jest,
         czy zapytanie umieszczone w liściu zostało wykonane.
         
     \item \verb|endpoint_execution::test::request_variables_work| - test
@@ -92,12 +92,15 @@ newman. Pozwala to na automatyczne wykonywanie testów.
 
 Wykonanie testów integracyjnych widać na listingu \ref{postmanTestExec}.
 
-% \lstinputlisting[
-%     frame=tb,
-%     label={postmanTestExec},
-%     caption={Wykonanie testów integracyjnych za pomocą programu \verb|newman|.
-%         Dla poprawienia przejrzystości usunięto tokeny JWT.}
-% ]{./code/newmanIntegration.txt}
+{
+    \small
+    \singlespacing
+    \lstinputlisting[
+        frame=tb,
+        label={postmanTestExec},
+        caption={Wykonanie testów integracyjnych za pomocą programu newman}]
+    {./code/newmanIntegration.txt}
+}
 
 
 \FloatBarrier
@@ -158,7 +161,7 @@ insert into test_table_one (name, age)
 
     \item Create endpoint - test wysyła do serwera zapytanie będące wariantem
         zapytania, które aplikacja frontend wysyła w celu stworzenia punktu
-        końcowego. Test spradza, czy odpowiedź od serwera ma kod HTTP 200 OK.
+        końcowego. Test sprawdza, czy odpowiedź od serwera ma kod HTTP 200 OK.
 
     \item Call endpoint as admin - test wywołuje punkt końcowy stworzony w
         teście 8. Test sprawdza, czy wysłana przez serwer odpowiedź zawiera
@@ -220,6 +223,30 @@ przedstawione poniżej.
                 powinna zostać stworzona nowa karta znajdująca się na widoku
                 startowym. Nowa karta powinna zostać wybrana jako aktywna.
 
+                Przebieg testu został przedstawiony na rysunku \ref{cardCreationManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/creating_cards/1_pre.png} }}
+
+                    \subfloat[\centering Po wykonaniu]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/creating_cards/2_post.png} }}
+
+                    \subfloat[\centering Przed wykonaniem, gdy ostatnia karta jest na widoku
+                    startowym]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/creating_cards/3_pre.png} }}
+
+                    \subfloat[\centering Po wykonaniu, gdy ostatnia karta była na widoku startowym]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/creating_cards/4_post.png} }}
+
+                    \caption{Przebieg testu tworzenia kart}
+                    \label{cardCreationManualTest}
+                \end{figure}
+
+                \FloatBarrier
+
             \item \textbf{Testowanie poprawnego zamykania karty.}
 
                 \textbf{Przebieg testu:}
@@ -234,14 +261,37 @@ przedstawione poniżej.
 
                 \textbf{Spodziewany wynik:}
 
-                Jeśli karta, którą spróbowano zamknąć jest jedyną kartą i nie
+                Jeśli karta, którą spróbowano zamknąć jest jedyną kartą i
                 jest na widoku startowym, nie powinno się nic stać. Jeśli karta
                 jest jedyną i nie jest na widoku startowym, w karcie powinien
                 zostać otworzony widok startowy.
 
                 Jeśli karta, którą spróbowano zamknąć nie jest jedyną kartą,
-                karta powinna przestać istnieć. Dowolna sąsiedna karta do karty
+                karta powinna przestać istnieć. Dowolna sąsiednia karta do karty
                 zamkniętej powinna zostać wybrana jako aktywna.
+
+                Przebieg testu został przedstawiony na rysunku \ref{cardClosingManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem, gdy istnieje jedna karta]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/closing_cards/1_pre.png} }}
+
+                    \subfloat[\centering Po wykonaniu, gdy istniała jedna karta]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/closing_cards/2_post.png} }}
+
+                    \subfloat[\centering Przed wykonaniem, gdy istnieje wiele kart]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/closing_cards/3_pre.png} }}
+
+                    \subfloat[\centering Po wykonaniu, gdy istniało wiele kart]
+                    {{\includegraphics[width=.8\linewidth]{./img/cards/closing_cards/4_post.png} }}
+
+                    \caption{Przebieg testu zamykania kart}
+                    \label{cardClosingManualTest}
+                \end{figure}
+
+                \FloatBarrier
 
             \item \textbf{Testowanie poprawnego zachowania stanu w karcie.}
 
@@ -252,7 +302,7 @@ przedstawione poniżej.
                     \item Otworzenie w dowolnej karcie komponentu zawierającego
                         stan (na przykład pole tekstowe).
 
-                    \item Zmiana stanu komponentu (na przykład wpisanie dowonego
+                    \item Zmiana stanu komponentu (na przykład wpisanie dowolnego
                         tekstu do pola tekstowego).
 
                     \item Przełączenie aktywnej karty na dowolną inną kartę.
@@ -267,6 +317,26 @@ przedstawione poniżej.
                 Stan komponentu po ponownym otwarciu karty powinien być
                 identyczny do stanu przed pierwszym przełączeniem aktywnej
                 karty.
+
+                Przebieg testu został przedstawiony na rysunku \ref{stateRetentionManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed zmianą karty]
+                    {{\includegraphics[width=.8\linewidth]{./img/state_retention/1.png} }}
+
+                    \subfloat[\centering Po zmianie karty]
+                    {{\includegraphics[width=.8\linewidth]{./img/state_retention/2.png} }}
+
+                    \subfloat[\centering Po ponownym otwarciu karty z rysunku (a)]
+                    {{\includegraphics[width=.8\linewidth]{./img/state_retention/3.png} }}
+
+                    \caption{Przebieg testu zachowania stanu w karcie}
+                    \label{stateRetentionManualTest}
+                \end{figure}
+
+                \FloatBarrier
 
         \end{enumerate}
 
@@ -291,6 +361,22 @@ przedstawione poniżej.
                 Pod ostatnim edytorem zapytania SQL pojawi się nowy edytor
                 zapytania SQL.
 
+                Przebieg testu został przedstawiony na rysunku \ref{newBlockCreationManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem]
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/new_block/1.png} }}
+                    \medspace
+                    \subfloat[\centering Po wykonaniu]
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/new_block/2.png} }}
+
+                    \caption{Przebieg testu tworzenia nowego zapytania}
+                    \label{newBlockCreationManualTest}
+                \end{figure}
+
+                \FloatBarrier
 
             \item \textbf{Testowanie poprawnego usuwania zapytania SQL.}
 
@@ -299,7 +385,7 @@ przedstawione poniżej.
                 \begin{enumerate}
 
                     \item Wciśnięcie przycisku ``Delete'' po lewej stronie pola
-                        teskstowego z zapytaniem SQL.
+                        tekstowego z zapytaniem SQL.
 
                 \end{enumerate}
 
@@ -311,6 +397,29 @@ przedstawione poniżej.
                 Jeśli edytor nie jest jedynym edytorem, zostanie usunięty z
                 listy edytorów.
 
+                Przebieg testu został przedstawiony na rysunku \ref{blockDeletionManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem, gdy jest więcej, niż jedno zapytanie]
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/deleting_block/1.png} }}
+                    \medspace
+                    \subfloat[\centering Po wykonaniu, gdy było więcej, niż jedno zapytanie]
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/deleting_block/2.png} }}
+
+                    \subfloat[\centering Przed wykonaniem, jest tylko jedno zapytanie]
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/deleting_block/3.png} }}
+                    \medspace
+                    \subfloat[\centering Po wykonaniu, gdy było tylko jedno zapytanie]
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/deleting_block/4.png} }}
+
+                    \caption{Przebieg testu usuwania zapytania}
+                    \label{blockDeletionManualTest}
+                \end{figure}
+
+                \FloatBarrier
+
             \item \textbf{Testowanie poprawnego wyłączania zapytania SQL.}
 
                 \textbf{Przebieg testu:}
@@ -318,10 +427,10 @@ przedstawione poniżej.
                 \begin{enumerate}
 
                     \item Wciśnięcie przycisku ``Disable'' po lewej stronie pola
-                        teskstowego z zapytaniem SQL.
+                        tekstowego z zapytaniem SQL.
 
                     \item Wciśnięcie przycisku ``Enable'' po lewej stronie pola
-                        teskstowego z zapytaniem SQL.
+                        tekstowego z zapytaniem SQL.
 
                 \end{enumerate}
 
@@ -335,13 +444,33 @@ przedstawione poniżej.
                 Po wciśnięciu przycisku ``Enable'', działanie przycisku
                 ``Disable'' zostanie odwrócone.
 
+                Przebieg testu został przedstawiony na rysunku \ref{blockDisablingManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem]
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/disabling_block/1.png} }}
+                    \medspace
+                    \subfloat[\centering Po wciśnięciu ``Disable'']
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/disabling_block/2.png} }}
+
+                    \subfloat[\centering Po wciśnięciu ``Enable'']
+                    {{\includegraphics[width=.45\linewidth]{./img/sql_editor/disabling_block/3.png} }}
+
+                    \caption{Przebieg testu wyłączania zapytania}
+                    \label{blockDisablingManualTest}
+                \end{figure}
+
+                \FloatBarrier
+
         \end{enumerate}
 
     \item \textbf{Testowanie poprawnego działania edytora punktów końcowych.}
 
         \begin{enumerate}
 
-            \item \textbf{Testowanie poprawnego tworzenia nowego zapytania.}
+            \item \textbf{Testowanie poprawnego tworzenia nowego drzewa zapytań SQL.}
 
                 \textbf{Przebieg testu:}
 
@@ -355,7 +484,24 @@ przedstawione poniżej.
                 \textbf{Spodziewany wynik:}
 
                 Pod ostatnim zapytaniem zostanie stworzone nowe zapytanie będące
-                korzeniem nowego drzewa niezaleźnego od pozostałych zapytań.
+                korzeniem nowego drzewa niezależnego od pozostałych zapytań.
+
+                Przebieg testu został przedstawiony na rysunku \ref{creatingNewTreeManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem]
+                    {{\includegraphics[width=.60\linewidth]{./img/endpoint_editor/creating_new/1.png} }}
+
+                    \subfloat[\centering Po wykonaniu]
+                    {{\includegraphics[width=.60\linewidth]{./img/endpoint_editor/creating_new/2.png} }}
+
+                    \caption{Przebieg testu tworzenia nowego drzewa zapytań SQL}
+                    \label{creatingNewTreeManualTest}
+                \end{figure}
+
+                \FloatBarrier
 
             \item \textbf{Testowanie poprawnego dodawania zapytania podrzędnego.}
 
@@ -381,6 +527,23 @@ przedstawione poniżej.
                 dopiero, gdy zostaną usunięte wszystkie zapytania podrzędne do
                 tego zapytania.
 
+                Przebieg testu został przedstawiony na rysunku \ref{creatingNewSubTreeManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem]
+                    {{\includegraphics[width=.66\linewidth]{./img/endpoint_editor/creating_sub/1.png} }}
+
+                    \subfloat[\centering Po wykonaniu]
+                    {{\includegraphics[width=.66\linewidth]{./img/endpoint_editor/creating_sub/2.png} }}
+
+                    \caption{Przebieg testu tworzenia nowego podrzędnego drzewa zapytań SQL}
+                    \label{creatingNewSubTreeManualTest}
+                \end{figure}
+
+                \FloatBarrier
+
             \item \textbf{Testowanie poprawnego usuwania zapytania SQL.}
 
                 \textbf{Przebieg testu:}
@@ -405,7 +568,30 @@ przedstawione poniżej.
                 Jeśli zapytanie nie było jedynym zapytaniem, całe pole tekstowe
                 zostanie wykasowane.
 
-            \item \textbf{Testowanie poprawnego dodawania testowych danych
+                Przebieg testu został przedstawiony na rysunku \ref{deletingTreeManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem, gdy istnieje więcej, niż jedno drzewo]
+                    {{\includegraphics[width=.52\linewidth]{./img/endpoint_editor/deleting/1.png} }}
+                    \medspace
+                    \subfloat[\centering Po wykonaniu, gdy istniało więcej, niż jedno drzewo]
+                    {{\includegraphics[width=.52\linewidth]{./img/endpoint_editor/deleting/2.png} }}
+
+                    \subfloat[\centering Przed wykonaniem, gdy istnieje jedno drzewo]
+                    {{\includegraphics[width=.52\linewidth]{./img/endpoint_editor/deleting/3.png} }}
+                    \medspace
+                    \subfloat[\centering Po wykonaniu, gdy istniało jedno drzewo]
+                    {{\includegraphics[width=.52\linewidth]{./img/endpoint_editor/deleting/4.png} }}
+
+                    \caption{Przebieg testu usuwania drzewa zapytań SQL}
+                    \label{deletingTreeManualTest}
+                \end{figure}
+
+                \FloatBarrier
+
+            \item \textbf{Testowanie poprawnego dodawania nowego klucza do tabeli danych testowych
                 pochodzących z zapytania.}
 
                 \textbf{Przebieg testu:}
@@ -424,6 +610,23 @@ przedstawione poniżej.
                 Do tabeli znajdującej się pod polem tekstowym zostanie dodany
                 nowy rząd. W kolumnie ``Key'' znajdzie się klucz wpisany do pola
                 tekstowego.
+
+                Przebieg testu został przedstawiony na rysunku \ref{newTestDataKeyManualTest}.
+
+                \begin{figure}[h]
+                    \centering
+
+                    \subfloat[\centering Przed wykonaniem]
+                    {{\includegraphics[width=.70\linewidth]{./img/endpoint_editor/test_data/1.png} }}
+
+                    \subfloat[\centering Po wykonaniu]
+                    {{\includegraphics[width=.70\linewidth]{./img/endpoint_editor/test_data/2.png} }}
+
+                    \caption{Przebieg testu dodawania nowego klucza do danych testowych}
+                    \label{newTestDataKeyManualTest}
+                \end{figure}
+
+                \FloatBarrier
 
         \end{enumerate}
 

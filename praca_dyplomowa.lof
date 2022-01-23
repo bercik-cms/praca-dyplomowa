@@ -1,19 +1,64 @@
 \babel@toc {polish}{}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Tworzenie nowego wpisu w systemie Wordpress\relax }}{6}{figure.caption.2}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Główny interfejs aplikacji\relax }}{13}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Tworzenie nowego wpisu w systemie Wordpress\relax }}{5}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Edytor Gutenberg\relax }}{6}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Tworzenie nowego elementu w systemie Strapi\relax }}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Edytor relacji w Strapi\relax }}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Główny interfejs aplikacji\relax }}{13}{figure.caption.8}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Motyw jasny}}}{13}{subfigure.1.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Motyw ciemny}}}{13}{subfigure.1.2}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Interfejs tworzenia nowego typu danych\relax }}{14}{figure.caption.6}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Interfejs zarządzania danymi w tabeli\relax }}{15}{figure.caption.7}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Edytor SQL wykonywanego natychmiast\relax }}{17}{figure.caption.8}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Porównanie zapytania testowego\relax }}{17}{figure.caption.9}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{17}{subfigure.5.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{17}{subfigure.5.2}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Porównanie diagramu ER\relax }}{18}{figure.caption.10}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{18}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{18}{subfigure.6.2}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Widok pełnoekranowy diagramu\relax }}{19}{figure.caption.11}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Interfejs tworzenia nowego punktu końcowego\relax }}{22}{figure.caption.13}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Interfejs testowania tworzonego punktu końcowego\relax }}{23}{figure.caption.14}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Wywołanie punktu końcowego w przeglądarce Firefox\relax }}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagram obrazujący działanie algorytmu znajdowania wartości zmiennych\relax }}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Interfejs tworzenia nowego typu danych\relax }}{16}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Interfejs zarządzania danymi w tabeli\relax }}{17}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Edytor SQL wykonywanego natychmiast\relax }}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Porównanie zapytania testowego\relax }}{19}{figure.caption.12}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{19}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{19}{subfigure.5.2}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Porównanie diagramu ER\relax }}{20}{figure.caption.13}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{20}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{20}{subfigure.6.2}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Widok pełnoekranowy diagramu\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Interfejs tworzenia nowego punktu końcowego\relax }}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Interfejs testowania tworzonego punktu końcowego\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Wywołanie punktu końcowego w przeglądarce Firefox\relax }}{25}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Diagram obrazujący działanie algorytmu znajdowania wartości zmiennych\relax }}{28}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Interfejs tworzenia użytkowników\relax }}{31}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Interfejs zarządzania kontami użytkowników\relax }}{32}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Przebieg testu tworzenia kart\relax }}{40}{figure.caption.25}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{40}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{40}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Przed wykonaniem, gdy ostatnia karta jest na widoku startowym}}}{40}{subfigure.1.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Po wykonaniu, gdy ostatnia karta była na widoku startowym}}}{40}{subfigure.1.4}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Przebieg testu zamykania kart\relax }}{42}{figure.caption.26}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem, gdy istnieje jedna karta}}}{42}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu, gdy istniała jedna karta}}}{42}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Przed wykonaniem, gdy istnieje wiele kart}}}{42}{subfigure.2.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Po wykonaniu, gdy istniało wiele kart}}}{42}{subfigure.2.4}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Przebieg testu zachowania stanu w karcie\relax }}{44}{figure.caption.27}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed zmianą karty}}}{44}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po zmianie karty}}}{44}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Po ponownym otwarciu karty z rysunku (a)}}}{44}{subfigure.3.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Przebieg testu tworzenia nowego zapytania\relax }}{45}{figure.caption.28}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{45}{subfigure.4.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{45}{subfigure.4.2}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Przebieg testu usuwania zapytania\relax }}{46}{figure.caption.29}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem, gdy jest więcej, niż jedno zapytanie}}}{46}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu, gdy było więcej, niż jedno zapytanie}}}{46}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Przed wykonaniem, jest tylko jedno zapytanie}}}{46}{subfigure.5.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Po wykonaniu, gdy było tylko jedno zapytanie}}}{46}{subfigure.5.4}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Przebieg testu wyłączania zapytania\relax }}{47}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{47}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wciśnięciu ``Disable''}}}{47}{subfigure.6.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Po wciśnięciu ``Enable''}}}{47}{subfigure.6.3}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Przebieg testu tworzenia nowego drzewa zapytań SQL\relax }}{49}{figure.caption.31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{49}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{49}{subfigure.7.2}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Przebieg testu tworzenia nowego podrzędnego drzewa zapytań SQL\relax }}{51}{figure.caption.32}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{51}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{51}{subfigure.8.2}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Przebieg testu usuwania drzewa zapytań SQL\relax }}{53}{figure.caption.33}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem, gdy istnieje więcej, niż jedno drzewo}}}{53}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu, gdy istniało więcej, niż jedno drzewo}}}{53}{subfigure.9.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering Przed wykonaniem, gdy istnieje jedno drzewo}}}{53}{subfigure.9.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering Po wykonaniu, gdy istniało jedno drzewo}}}{53}{subfigure.9.4}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Przebieg testu dodawania nowego klucza do danych testowych\relax }}{54}{figure.caption.34}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Przed wykonaniem}}}{54}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Po wykonaniu}}}{54}{subfigure.10.2}%
