@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.1.23)  23 JAN 2022 17:18
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.1.23)  24 JAN 2022 18:45
  restricted system commands enabled.
 **praca_dyplomowa.tex
 (./praca_dyplomowa.tex
@@ -832,11 +832,11 @@ LaTeX Font Warning: Font shape `TU/ArialNarrowBold(0)/b/n' undefined
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<./img/oryginal.jpg, id=95, 616.10779pt x 847.42014pt>
+<./img/oryginal.jpg, id=95, 614.0541pt x 844.5954pt>
 File: ./img/oryginal.jpg Graphic file (type jpg)
 <use ./img/oryginal.jpg>
 Package luatex.def Info: ./img/oryginal.jpg  used on input line 42.
-(luatex.def)             Requested size: 616.10628pt x 847.41808pt.
+(luatex.def)             Requested size: 614.05258pt x 844.59334pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [2
@@ -844,7 +844,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 
 
 ]
-Overfull \vbox (103.77788pt too high) has occurred while \output is active []
+Overfull \vbox (100.95314pt too high) has occurred while \output is active []
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
@@ -1536,7 +1536,7 @@ Here is how much of LuaTeX's memory you used:
 </usr/share/fonts/ms-core/TimesBd.ttf></usr/share/fonts/fira-code/FiraCode-Regul
 ar.ttf></usr/share/fonts/ms-core/Times.ttf></usr/share/fonts/ms-arial-narrow/ARI
 ALN.TTF></usr/share/fonts/ms-arial-narrow/ARIALNB.TTF>
-Output written on praca_dyplomowa.pdf (67 pages, 4742911 bytes).
+Output written on praca_dyplomowa.pdf (67 pages, 4111546 bytes).
 
 PDF statistics: 1179 PDF objects out of 1200 (max. 8388607)
  983 compressed objects within 10 object streams
